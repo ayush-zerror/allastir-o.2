@@ -19,7 +19,7 @@ const Footer = () => {
   //   { path: "/contact", name: "Contact" },
   // ];
   const handlePdf = () => {
-    setIsPdf(true)
+    setIsPdf(true);
   };
 
   return (
