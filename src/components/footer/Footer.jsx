@@ -7,7 +7,9 @@ import React, { useContext } from 'react'
 
 const Footer = () => {
   const router = useRouter();
+
   const { setIsPdf } = useContext(CartContext)
+
 
   // const menus = [
   //   { path: "/", name: "Home" },
@@ -17,7 +19,7 @@ const Footer = () => {
   //   { path: "/contact", name: "Contact" },
   // ];
   const handlePdf = () => {
-    setIsPdf(true);
+    setIsPdf(true)
   };
 
   return (
