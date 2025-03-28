@@ -26,7 +26,7 @@ const Footer = () => {
     <div className='w-full sm:h-[85vh] md:h-[100vh] lg:h-[95vh] h-[50vh] p-[4vw] sm:p-[4vw] md:p-[4vw] lg:p-[4vw] sm:pb-[8vw] md:pb-[4vw] lg:pb-[4vw] px-[2.5vw]'>
       <div className='w-full h-full flex sm:flex-col md:flex-col lg:flex-col sm:justify-between md:justify-between lg:justify-between'>
         <div className='sm:w-full lg:w-full md:w-full w-1/2 sm:h-fit lg:h-fit md:h-fit h-full flex flex-col justify-between'>
-          <Link href="/" className='sm:hidden'><Image width={1000} height={1000} className='w-[200px] h-auto' src="/logo-with-tag.png" alt='logo' /></Link>
+          <Link href="/" className='sm:hidden'><Image width={1000} height={1000} className='w-[200px] h-auto' src="/main-logo.png" alt='logo' /></Link>
           <div>
             <p className='sm:hidden md:hidden lg:hidden xl:text-[1.5vw] text-[.8vw] opacity-[.9]'>All Rights Reserved © Allastir Pvt. Ltd.</p>
             <p className='sm:hidden md:hidden lg:hidden xl:text-[1.5vw] text-[.8vw]'><span className='opacity-[.9]'>Developed by</span> <a target='_blank' href='https://www.zerrorstudios.com/' className='text-black font-bold'>Zerror Studios</a></p>
