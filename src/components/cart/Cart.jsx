@@ -38,7 +38,7 @@ const Cart = ({ isOpen, onClose }) => {
     };
 
     return (
-        <div id="cartOverlay" className="fixed top-0 left-0 w-full h-screen bg-[#00000070] opacity-0 invisible z-[999] flex justify-end" onClick={onClose}>
+        <div id="cartOverlay" className="fixed top-0 left-0 w-full sm:h-[100dvh] h-screen bg-[#00000070] opacity-0 invisible z-[999] flex justify-end" onClick={onClose}>
             {/* Cart Sidebar */}
             <div id='cartContainer' className="absolute right-[-50%] top-0 sm:w-[100vw] md:w-[100vw] lg:w-[100vw] xl:w-[60vw] w-[35vw] h-full bg-white shadow-lg sm:pt-[30px] p-4 overflow-hidden" onClick={(e) => e.stopPropagation()}>
                 <div id='cart-wrapper' className='relative flex flex-col h-full'>
