@@ -54,7 +54,7 @@ const Navbar = ({ navRef }) => {
 
   return (
     <div ref={navRef} className='w-full sm:px-[4vw] md:px-[4vw] lg:px-[4vw] px-[2.5vw] sm:py-[3.1vw] md:py-[3.1vw] lg:py-[3.1vw] py-[1vw] text-black bg-white flex items-center justify-between fixed z-[99] top-0 left-0' style={{ backdropFilter: "blur(40px)" }}>
-      <Link href="/"><Image width={1000} height={1000} priority className='w-[200px] h-[60px] object-contain' src="/main-logo.png" alt='logo' /></Link>
+      <Link href="/"><Image width={1000} height={1000} priority className='w-[200px] h-[60px] object-contain' src="/allastir_logo.webp" alt='logo' /></Link>
 
       <div className='sm:hidden md:hidden lg:hidden absolute top-1/2 left-1/2 -translate-x-1/2 xl:text-[1.8vw] text-[1.1vw] font-regular capitalize -translate-y-1/2 flex items-center gap-[3vw]'>
         {menus.map(({ path, name }, index) =>
