@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 
 const Popup = ({ popup,bell }) => {
   return (
-    <div className='w-full h-screen absolute top-0 left-0 pointer-events-none'>
+    <div className='hidden w-full h-screen absolute top-0 left-0 pointer-events-none'>
       <div ref={popup} className="notification pointer-events-auto fixed scale-0 z-10 border sm:bottom-[5vw] bottom-[2vw] sm:right-[4vw] md:right-[4vw] lg:right-[4vw] right-[2vw] sm:w-[90%] md:w-[90%] lg:w-[70%] w-[20%] sm:p-[4vw] md:p-[4vw] lg:p-[4vw] p-[1vw] bg-white rounded-xl flex items-start justify-between sm:gap-[3vw] md:gap-[3vw] lg:gap-[3vw] gap-[1vw]">
         <div className='sm:p-[3vw] md:p-[3vw] p-[1vw] sm:px-[4vw] md:px-[4vw] px-[1.3vw] rounded-lg bg-blue-950/10 text-[#1863AB] flex items-center justify-center'>
           <i className="ri-notification-3-line sm:text-[4vw] md:text-[4vw] lg:text-[2.5vw] text-[1vw]"></i>

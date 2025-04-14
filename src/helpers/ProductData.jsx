@@ -1,37 +1,38 @@
 export const productData = [
-    {
-      title: "ANTI-DIABETIC",
-      product: [
-        {
-          name: "Voglibose JP ",
-          description: "CAS No 83480-29-9",
-          image: "/product/allastir-product-generic-1.png"
-        },
-        {
-          name: "Lobeglitazone Sulphate",
-          description: "CAS No763108-62-9",
-          image: "/product/allastir-product-generic-2.png"
-        }
-      ]
-    },
+   
     {
       title: "ANTI-FUNGAL",
       product: [
         {
           name: "Amoralfine HCL",
           description: "CAS No 78613-38-4",
-          image: "/product/allastir-product-generic-3.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/pheniramine-maleate.jpg"
         },
         {
           name: "Posaconazole",
           description: "CAS No 171228-49-2",
-          image: "/product/allastir-product-generic-4.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/brompheniramine-maleate.jpg"
         },
         {
           name: "Naftifine Hcl",
           description: "CAS No 65473-14-5",
-          image: "/product/allastir-product-generic-5.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/brompheniramine-maleate.jpg"
         },
+      ]
+    },
+    {
+      title: "ANTI-DIABETIC",
+      product: [
+        {
+          name: "Voglibose JP ",
+          description: "CAS No 83480-29-9",
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/chlorphenamine-maleate.jpg"
+        },
+        {
+          name: "Lobeglitazone Sulphate",
+          description: "CAS No763108-62-9",
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/pheniramine-maleate.jpg"
+        }
       ]
     },
     {
@@ -40,12 +41,12 @@ export const productData = [
         {
           name: "Dolutegravir Sodium",
           description: "CAS No 1051375-19-9",
-          image: "/product/allastir-product-generic-6.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/brompheniramine-maleate.jpg"
         },
         {
           name: "Inosine Pranobex",
           description: "CAS No 36703-88-5",
-          image: "/product/allastir-product-generic-7.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/dex-chlorpheniramine-maleate.jpg"
         }
       ]
     },
@@ -55,7 +56,7 @@ export const productData = [
         {
           name: "Torsemide USP",
           description: "CAS No 56211-40-6 ",
-          image: "/product/allastir-product-generic-8.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/mepyramine-maleate.jpg"
         }
       ]
     },
@@ -65,7 +66,7 @@ export const productData = [
         {
           name: "Topiroxostat",
           description: "CAS No 577778-58-6",
-          image: "/product/allastir-product-generic-9.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/diphenhydramine-hydrochloride.jpg"
         }
       ]
     },
@@ -75,7 +76,7 @@ export const productData = [
         {
           name: "Valethemate Bromide",
           description: "CAS No 90-22-2",
-          image: "/product/allastir-product-generic-10.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/salbutamol-sulphate.jpg"
         }
       ]
     },
@@ -85,7 +86,7 @@ export const productData = [
         {
           name: "D-Chiro Inositol",
           description: "CAS No 643-12-9",
-          image: "/product/allastir-product-generic-11.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/levosalbutamol-sulphate.jpg"
         }
       ]
     },
@@ -95,7 +96,7 @@ export const productData = [
         {
           name: "Iguratimod",
           description: "CAS No 123663-49-0",
-          image: "/product/allastir-product-generic-1.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/dextromethorphan-hydrobromide.jpg"
         }
       ]
     },
@@ -105,7 +106,7 @@ export const productData = [
         {
           name: "Rivaroxaban",
           description: "CAS No 366789-02-8",
-          image: "/product/allastir-product-generic-2.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/ketamine-hydrochloride.jpg"
         }
       ]
     },
@@ -115,7 +116,7 @@ export const productData = [
         {
           name: "Perfenidone BP",
           description: "CAS No 53179-13-8",
-          image: "/product/allastir-product-generic-3.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/s-ketamine-hydrochloride-esketamine-hydrochloride.jpg"
         }
       ]
     },
@@ -125,7 +126,7 @@ export const productData = [
         {
           name: "Linezolid",
           description: "CAS No 165800-03-3",
-          image: "/product/allastir-product-generic-4.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/tramadol-hydrochloride.jpg"
         }
       ]
     },
@@ -135,7 +136,7 @@ export const productData = [
         {
           name: "Cilostazol",
           description: "CAS No 73963-72-1",
-          image: "/product/allastir-product-generic-5.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/riboflavin-5-phosphate-sodium.jpg"
         }
       ]
     },
@@ -145,7 +146,7 @@ export const productData = [
         {
           name: "Silodosin",
           description: "CAS No 160970-54-7",
-          image: "/product/allastir-product-generic-6.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/artemether-ip-ph-int-usp.jpg"
         }
       ]
     },
@@ -155,7 +156,7 @@ export const productData = [
         {
           name: "Cenobamate",
           description: "CAS No 913088-80-9",
-          image: "/product/allastir-product-generic-7.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/lumefantrine.jpg"
         }
       ]
     },
@@ -165,7 +166,7 @@ export const productData = [
         {
           name: "Polydatin",
           description: "CAS No 65914-17-2",
-          image: "/product/allastir-product-generic-8.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/alluporinol.jpg"
         }
       ]
     },
@@ -175,62 +176,62 @@ export const productData = [
         {
           name: "L-Methylfolate/Calcium-L-5-methyl tetrahydrofolate",
           description: "CAS No 151533-22-1",
-          image: "/product/allastir-product-generic-9.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/chlorphenamine-maleate.jpg"
         },
         {
           name: "(6S)-L-5methyltetrahydrofolic acid, glucosamine salt",
           description: "CAS No 1181972-37-1 ",
-          image: "/product/allastir-product-generic-10.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/pheniramine-maleate.jpg"
         },
         {
           name: "Calcium Folinate/Leucovorin Calcium USP",
           description: "CAS No 1492-18-8",
-          image: "/product/allastir-product-generic-11.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/brompheniramine-maleate.jpg"
         },
         {
           name: "Vitamin K2-7/Menaquinone-7 USP",
           description: "CAS No 2124-57-4 ",
-          image: "/product/allastir-product-generic-1.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/dex-chlorpheniramine-maleate.jpg"
         },
         {
           name: "Pyridoxal-5-phosophate ",
           description: "CAS No 54-47-7",
-          image: "/product/allastir-product-generic-2.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/mepyramine-maleate.jpg"
         },
         {
           name: "Rutin Trihydrate",
           description: "CAS No 250249-75-3 ",
-          image: "/product/allastir-product-generic-3.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/dexbrompheniramine-maleate.jpg"
         },
         {
           name: "Ubidecarenone",
           description: "CAS No 303-98-0",
-          image: "/product/allastir-product-generic-4.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/cetirizine-di-hydrochloride.jpg"
         },
         {
           name: "Ubiquinol acetate",
           description: "CAS No 992-78-9",
-          image: "/product/allastir-product-generic-5.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/diphenhydramine-hydrochloride.jpg"
         },
         {
           name: "Tocopherol Polyethylene Glycol Succinate ",
           description: "CAS No 9002-96-4",
-          image: "/product/allastir-product-generic-6.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/salbutamol-sulphate.jpg"
         },
         {
           name: "Palmitoyl ethanolamide ",
           description: "CAS No 544-31-0",
-          image: "/product/allastir-product-generic-7.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/levosalbutamol-sulphate.jpg"
         },
         {
           name: "Oleoyl ethanolamide",
           description: "CAS No 111-58-0 ",
-          image: "/product/allastir-product-generic-8.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/dextromethorphan-hydrobromide.jpg"
         },
         {
           name: "Luteolin",
           description: "CAS No 491-70-3",
-          image: "/product/allastir-product-generic-9.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/ketamine-hydrochloride.jpg"
         }
       ]
     },
@@ -240,7 +241,7 @@ export const productData = [
         {
           name: "Troxipide",
           description: "CAS No 30751-05-4",
-          image: "/product/allastir-product-generic-10.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/s-ketamine-hydrochloride-esketamine-hydrochloride.jpg"
         }
       ]
     },
@@ -250,22 +251,22 @@ export const productData = [
         {
           name: "Isavuconazonium Sulfate",
           description: "CAS No 946075-13-4",
-          image: "/product/allastir-product-generic-11.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/riboflavin-5-phosphate-sodium.jpg"
         },
         {
           name: "Fosravuconazole L-lysinate Ethanolate",
           description: "CAS No 914361-45-8",
-          image: "/product/allastir-product-generic-1.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/chlorphenamine-maleate.jpg"
         },
         {
           name: "Isavuconazole",
           description: "CAS No 241479-67-4",
-          image: "/product/allastir-product-generic-2.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/pheniramine-maleate.jpg"
         },
         {
           name: "Fosravuconazole",
           description: "CAS No 351227-64-0",
-          image: "/product/allastir-product-generic-3.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/alluporinol.jpg"
         }
       ]
     },
@@ -275,7 +276,7 @@ export const productData = [
         {
           name: "Fosfomycin Trometamol ",
           description: "CAS No 78964-85-9",
-          image: "/product/allastir-product-generic-4.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/lumefantrine.jpg"
         }
       ]
     },
@@ -285,7 +286,7 @@ export const productData = [
         {
           name: "Brivaracetam",
           description: "CAS No 357336-20-0 ",
-          image: "/product/allastir-product-generic-5.png"
+          image: "https://www.supriyalifescience.com/assets/images/diagrams/artemether-ip-ph-int-usp.jpg"
         }
       ]
     },

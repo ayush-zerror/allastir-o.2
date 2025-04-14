@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
+html::-webkit-scrollbar {
   display: none;
 }
 
@@ -63,6 +63,8 @@ body {
   animation-timing-function: linear;
   animation-duration: 30s;
 }
+
+
 /* 
 .mq-card h6 {
   transition: all ease 0.3s;

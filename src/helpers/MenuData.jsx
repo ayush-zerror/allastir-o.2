@@ -16,6 +16,10 @@ export const menus = [
     name: "Product",
   },
   {
+    path: "/career",
+    name: "Career",
+  },
+  {
     path: "/contact",
     name: "Contact",
   },

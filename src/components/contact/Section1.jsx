@@ -30,26 +30,22 @@ const Section1 = () => {
                 </form>
             </div>
             <div className='sm:w-full md:w-full lg:w-full w-[50%] sm:h-fit md:h-fit h-[85vh] sm:gap-[6vw] md:gap-[6vw] gap-[1vw]  rounded-2xl flex flex-col sm:pt-[4vw]'>
-                <div className='w-full h-[45%] rounded-2xl overflow-hidden'>
-                    <Image className='w-full h-full object-cover' width={1000} height={1000} priority src="/unit2.jpg" alt="unit-image" />
-                </div>
-                <div className='w-full h-[55%] sm:h-[75%]  rounded-2xl sm:bg-transparent md:bg-transparent bg-zinc-100/40 flex  flex-wrap sm:p-0 md:p-0 p-[1.5vw] justify-between'>
-                    <div className='sm:hidden w-[49%] sm:w-full md:w-full lg:w-full h-fit sm:mb-[4vw]'>
+                <div className='w-full h-[45%] rounded-2xl overflow-hidden sm:p-0 md:p-0 p-[1.2vw] bg-zinc-100/40 flex justify-between items-center'>
+                    <Image className='w-[56%] h-full  rounded-xl object-cover' width={1000} height={1000} priority src="/unit1.png" alt="unit-image" />
+                    <div className='sm:hidden w-[41%] sm:w-full md:w-full lg:w-full h-fit sm:mb-[4vw]'>
                         <h4 className='sm:text-[5vw] md:text-[4vw] lg:text-[3vw] text-[1vw] font-semibold'>Address</h4>
-                        <p className='sm:text-[4.5vw] md:text-[3.7vw] lg:text-[2.2vw] text-[1.05vw] sm:w-[80%] w-[100%] mt-[.2vw] text-black/70'><span className='font-semibold'>Unit 1</span> : Plot No. 12, Shed No. 9A, Sidco Industrial Estate, Vichoor, Manali New Town, Chennai - 600103, Tamilnadu, INDIA</p>
+                        <a  href="https://www.google.com/maps/place/Allastir+Private+Limited/@13.2049661,80.2602679,17z/data=!3m1!4b1!4m6!3m5!1s0x3a527bd3e5162223:0xf46d6c8e7f745a4b!8m2!3d13.2049661!4d80.2628428!16s%2Fg%2F11fv45s00w?entry=ttu&g_ep=EgoyMDI1MDIxOC4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
+                  target="_blank"  className='sm:text-[4.5vw] md:text-[3.7vw] lg:text-[2.2vw] text-[1.05vw] sm:w-[80%] w-[100%] mt-[.2vw] text-black/70'><span className='font-semibold'>Unit 1</span> : Plot No. 12, Shed No. 9A, Sidco Industrial Estate, Vichoor, Manali New Town, Chennai - 600103, Tamilnadu, INDIA</a>
+                        <h4 className='sm:text-[5vw] md:text-[4vw] mt-[1vw] lg:text-[3vw] text-[1vw] font-semibold'>E-Mail Adress</h4>
+                        <p className='sm:text-[4.5vw] md:text-[3.7vw] lg:text-[2.2vw] text-[1.05vw] sm:w-[80%] w-[60%] mt-[.2vw] text-black/70'>Info@allastir.com</p>
                     </div>
-                    <div className='sm:hidden w-[49%] sm:w-full md:w-full lg:w-full h-fit sm:mb-[4vw]'>
-                        <h4 className='sm:text-[5vw] md:text-[4vw] lg:text-[3vw] text-[1vw] font-semibold sm:hidden lg:hidden'><br /></h4>
-                        <p className='sm:text-[4.5vw] md:text-[3.7vw] lg:text-[2.2vw] text-[1.05vw] sm:w-[80%] w-[100%] mt-[.2vw] text-black/70'><span className='font-semibold'>Unit 2</span> : Plot No. 8-7, 8-8, 8-17, 8-18, APIIC Industrial Park, Attivaram Village, Ozili Mandal, Tirupati District, Andhra Pradesh -524 421.
-                        </p>
-                    </div>
-                    <div className='sm:w-[100%] w-[49%] h-fit'>
-                        <h4 className='sm:text-[5vw] md:text-[4vw] lg:text-[3vw] text-[1vw] font-semibold'>Contact Times</h4>
-                        <p className='sm:text-[4.5vw] md:text-[3.7vw] lg:text-[2.2vw] text-[1.05vw] sm:w-[80%] w-[60%] mt-[.2vw] text-black/70'>Monday to Saturday 10:00 am to 6:00 pm ,
-                            Sunday Closed</p>
-                    </div>
-                    <div className='sm:w-[100%] w-[49%] h-fit sm:mt-[4vw]'>
-                        <h4 className='sm:text-[5vw] md:text-[4vw] lg:text-[3vw] text-[1vw] font-semibold'>E-Mail Adress</h4>
+                </div>
+                <div className='w-full h-[45%] rounded-2xl overflow-hidden sm:p-0 md:p-0 p-[1.2vw] bg-zinc-100/40 flex justify-between items-center'>
+                    <Image className='w-[56%] h-full  rounded-xl object-cover' width={1000} height={1000} priority src="/unit2.jpg" alt="unit-image" />
+                    <div className='sm:hidden w-[41%] sm:w-full md:w-full lg:w-full h-fit sm:mb-[4vw]'>
+                        <h4 className='sm:text-[5vw] md:text-[4vw] lg:text-[3vw] text-[1vw] font-semibold sm:hidden lg:hidden'>Address</h4>
+                        <a target='_blank' href="https://maps.app.goo.gl/j87WGfps9Go8yHrz7" className='sm:text-[4.5vw] md:text-[3.7vw] lg:text-[2.2vw] text-[1.05vw] sm:w-[80%] w-[100%] mt-[.2vw] text-black/70'><span className='font-semibold'>Unit 2</span> : Plot No. 8-7, 8-8, 8-17, 8-18, APIIC Industrial Park, Attivaram Village, Ozili Mandal, Tirupati District, Andhra Pradesh -524 421.</a>
+                        <h4 className='sm:text-[5vw] md:text-[4vw] mt-[1vw] lg:text-[3vw] text-[1vw] font-semibold'>E-Mail Adress</h4>
                         <p className='sm:text-[4.5vw] md:text-[3.7vw] lg:text-[2.2vw] text-[1.05vw] sm:w-[80%] w-[60%] mt-[.2vw] text-black/70'>Info@allastir.com</p>
                     </div>
                 </div>

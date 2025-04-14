@@ -3,15 +3,15 @@ import { CartContext } from '@/utils/context/Wrapper';
 import Image from 'next/image';
 
 const Section2 = ({ data }) => {
-    const { cartItems, setCartItems, setIsCartOpen } = useContext(CartContext);
+    const {setIsCartOpen } = useContext(CartContext);
 
     const handleAddToBag = (product) => {
-        const productExists = cartItems.some(item => item.name === product.name);
+        // const productExists = cartItems.some(item => item.name === product.name);
 
-        if (!productExists) {
-            const updatedCart = [...cartItems, product];
-            setCartItems(updatedCart);
-        } 
+        // if (!productExists) {
+        //     const updatedCart = [...cartItems, product];
+        //     setCartItems(updatedCart);
+        // } 
         setIsCartOpen(true);
     };
 

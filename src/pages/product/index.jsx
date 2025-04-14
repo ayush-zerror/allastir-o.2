@@ -6,6 +6,7 @@ import Navbar from '@/components/navbar/Navbar'
 import gsap from 'gsap'
 import SeoHeader from '@/components/seo/SeoHeader'
 import { productData } from '@/helpers/ProductData'
+import ProductListing from '@/components/product/ProductListing'
 
 const Product = ({  meta, products }) => {
   const navRef = useRef(null)
@@ -78,11 +79,12 @@ const Product = ({  meta, products }) => {
       <div className='w-full relative overflow-hidden'>
         <Navbar navRef={navRef} />
         <Section1 sec1Ref={sec1Ref} />
-        <div ref={sec2Ref} className='pb-[5vw]'>
+        {/* <div ref={sec2Ref} className='pb-[5vw]'>
           {
             products.map((data, i) => <Section2 key={i} data={data} />)
           }
-        </div>
+        </div> */}
+        <ProductListing products={products}/>
         <Footer />
       </div>
     </>

@@ -54,10 +54,10 @@ const About = ({ meta , bluetxt , normaltxt }) => {
         <Navbar navRef={navRef} />
         <Section1 sec1Ref={sec1Ref} />
         <Section2 sec2Ref={sec2Ref} bluetxt={bluetxt} normaltxt={normaltxt} />
-        <Section3 />
+        {/* <Section3 /> */}
         <Section4 />
         <Section5 />
-        <Section6 />
+        {/* <Section6 /> */}
         <Footer />
       </div>
     </>

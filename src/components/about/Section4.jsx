@@ -383,36 +383,15 @@ const Section4 = () => {
     }, [])
     return (
         <div className='timeline-section w-full  h-[100vh]  flex sm:flex-col md:flex-col lg:flex-col lg:gap-[5vw] sm:justify-center md:justify-center lg:justify-center items-start'>
-            <div className='sm:w-full md:w-full lg:w-full w-[42%] sm:h-[50vh] md:h-[43vh] lg:h-[43vh]  h-full  flex flex-col justify-between pl-[2.5vw] sm:pl-[4vw] md:pl-[4vw] lg:pl-[4vw] xl:pt-[15vw] sm:pt-[15vw]  pt-[6vw] py-[1vw]'>
+            <div className='sm:w-full md:w-full lg:w-full w-[42%] sm:h-[50vh] md:h-[43vh] lg:h-[43vh]  h-full  flex flex-col justify-center pl-[2.5vw] sm:pl-[4vw] md:pl-[4vw] lg:pl-[4vw] xl:pt-[15vw] sm:pt-[15vw]  pt-[6vw] py-[1vw]'>
                 <h2 className='sm:text-[10vw] md:text-[7vw] lg:text-[7vw] text-[3vw] font-semibold  mb-[1vw] capitalize leading-[.7]'>Our Journey</h2>
-
-                <div className='w-full sm:h-[20vh] h-[50vh] xl:h-[45vh] flex flex-col justify-between'>
-                    <div className='sm:h-[18.5vw] md:h-[12.5vw] lg:h-[9vw] h-[10vw] w-fit overflow-hidden '>
+                <div className='sm:h-[18.5vw] md:h-[12.5vw] lg:h-[9vw] h-[10vw] w-fit overflow-hidden '>
                         {
                             timelineData.map((data, i) => (
                                 <h1 key={i} className='present-year sm:text-[12vw] md:text-[12vw] lg:text-[8vw] text-[10vw] font-semibold leading-none'>{data.year}</h1>
                             ))
                         }
                     </div>
-                    <div className='w-full h-[60%] sm:h-[100%] flex flex-col justify-end sm:mb-[5vw] md:mb-[5vw] lg:mb-[5vw]'>
-                        <div className='sm:h-[8.5vw] md:h-[6vw] lg:h-[6vw] xl:h-[4vw] h-[4vw] w-fit overflow-hidden sm:mb-[3vw] md:mb-[3vw] lg:mb-[3vw] xl:mb-[3vw]'>
-                            {
-                                timelineData.map((data, i) => (
-                                    <h2 key={i} className='timeline-title leading-1 whitespace-nowrap sm:text-[5vw] md:text-[4vw] lg:text-[4vw]  xl:text-[2.5vw]  text-[2.3vw] capitalize'>{data.title}</h2>
-                                ))
-                            }
-                        </div>
-                        <div className="w-full relative h-[40%]">
-                            {
-                                timelineData.map((data, i) => (
-                                    <p key={i} className={` timeline-para${i + 1} ${i === 0 ? '' : 'opacity-0'} absolute w-[90%] lg:w-[70%] sm:text-[4.5vw]  md:text-[3.7vw] lg:text-[2.5vw] xl:text-[1.8vw]  text-[1vw] leading-1 text-[#80868B]`}>{data.description}</p>
-                                ))
-                            }
-
-                        </div>
-
-                    </div>
-                </div>
             </div>
             <div className='sm:w-full md:w-full lg:w-full w-[57%] relative  sm:h-fit md:h-fit lg:h-fit sm:px-[4vw] md:px-[4vw] lg:px-[4vw] sm:pt-[0] md:pt-[0] lg:pt-[0] xl:pt-[15vw]  pt-[6vw]'>
                 <div className='w-full sm:h-[38vh] md:h-[38vh] lg:h-[38vh]  h-[80vh] flex justify-between items-end pb-[1vw] sm:pb-[2vw] md:pb-[2vw] lg:pb-[2vw] sm:mt-[0vw] md:mt-[0vw] lg:mt-[0vw]'>
@@ -474,20 +453,42 @@ const Section4 = () => {
                     </div>
                     <div className='sm:w-full md:w-full lg:w-full w-[89%] sm:h-[80%] md:h-[80%] lg:h-[95%] h-full relative rounded-lg overflow-hidden'>
                         {timelineData.map((data, index) => (
-                            <Image
-                            width={1000}
-                            height={1000}
+                            <div
                                 key={index}
+                                className={`tlig${index + 1} w-full h-full object-cover absolute top-0 left-0 flex items-center justify-center`}
                                 style={{
                                     clipPath:
                                         index === 0
                                             ? "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"
                                             : "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
                                 }}
-                                className={`tlig${index + 1} w-full h-full object-cover absolute top-0 left-0`}
-                                src={data.image}
-                                alt={`Image ${index + 1}`}
-                            />
+                            >
+                                <Image
+                                    width={1000}
+                                    height={1000}
+                                    key={index}
+                                    className={`w-full h-full object-cover`}
+                                    src={data.image}
+                                    alt={`Image ${index + 1}`}
+                                />
+                                <div style={{ background: "linear-gradient(to bottom , transparent , black)" }} className='w-full h-full absolute top-0 left-0 flex flex-col justify-end p-[2vw]'>
+                                    <div className='sm:h-[8.5vw] md:h-[6vw] lg:h-[6vw] xl:h-[4vw] h-[4vw] w-fit overflow-hidden sm:mb-[3vw] md:mb-[3vw] lg:mb-[3vw] xl:mb-[3vw]'>
+                                        {
+                                            timelineData.map((data, i) => (
+                                                <h2 key={i} className='timeline-title text-white leading-1 whitespace-nowrap sm:text-[5vw] md:text-[4vw] lg:text-[4vw]  xl:text-[2.5vw]  text-[2.3vw] capitalize'>{data.title}</h2>
+                                            ))
+                                        }
+                                    </div>
+                                    <div className="w-full relative h-[15%]">
+                                        {
+                                            timelineData.map((data, i) => (
+                                                <p key={i} className={` timeline-para${i + 1} ${i === 0 ? '' : 'opacity-0'} text-white absolute w-[90%] lg:w-[70%] sm:text-[4.5vw]  md:text-[3.7vw] lg:text-[2.5vw] xl:text-[1.8vw]  text-[1vw] leading-1`}>{data.description}</p>
+                                            ))
+                                        }
+
+                                    </div>
+                                </div>
+                            </div>
                         ))}
                     </div>
                 </div>

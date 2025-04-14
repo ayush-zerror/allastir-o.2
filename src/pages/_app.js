@@ -6,9 +6,8 @@ import 'remixicon/fonts/remixicon.css'
 export default function App({ Component, pageProps }) {
   return (
     <Wrapper>
-      <SmoothScroll>
-        <Component {...pageProps} />
-      </SmoothScroll>
+      <SmoothScroll />
+      <Component {...pageProps} />
     </Wrapper>
   );
 }
