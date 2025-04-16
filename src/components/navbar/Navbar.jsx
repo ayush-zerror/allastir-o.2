@@ -69,7 +69,7 @@ const Navbar = ({ navRef }) => {
             <Link
               key={index}
               href={path}
-              className={`  transition-all duration-75 relative ${router.pathname === path ? "font-bold" : "hover:text-[#E31E23]"}`}
+              className={`  transition-all duration-75 relative ${router.pathname === path ? "text-[#E31E23]" : "hover:text-[#E31E23]"}`}
             >
               {name}
             </Link>
@@ -81,7 +81,7 @@ const Navbar = ({ navRef }) => {
       <div className='flex items-center gap-[50px]'>
       <Link
               href="/contact"
-              className={`hover:bg-[#c13f33] bg-[#DF2A1A] text-white py-[.6vw] rounded font-semibold p-[2vw]  transition-all duration-75 relative"}`}
+              className={`hover:bg-[#2b206b] bg-[#3D2E8D] text-white py-[.6vw] rounded-full font-semibold p-[2vw]  transition-all duration-75 relative"}`}
             >
               Contact
             </Link>

@@ -56,13 +56,13 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-
+/* 
 .product-marquee {
   animation-name: slider;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-duration: 30s;
-}
+} */
 
 
 /* 
@@ -109,13 +109,13 @@ body {
 }
 
 
-.product-txt:hover i{
+/* .product-txt:hover i{
   color: black;
 }
 .product-txt:hover i {
   opacity: 1;
-}
-
+} */
+/* 
 
 @keyframes slider {
   0% {
@@ -124,7 +124,7 @@ body {
   100% {
     transform: translateX(-100%);
   }
-}
+} */
 
 .swiper {
   width: 100%;
@@ -214,3 +214,29 @@ body {
 
 
 
+
+
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.product-marquee-main {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-marquee {
+  display: flex;
+  width: fit-content;
+  animation: marqueeScroll 30s linear infinite;
+}
+
+.product-marquee:hover {
+  animation-play-state: paused;
+}

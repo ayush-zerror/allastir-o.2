@@ -1,3 +1,4 @@
+import WorldMapWithMarkers from '@/components/about/MapSection'
 import Section1 from '@/components/about/Section1'
 import Section3 from '@/components/about/Section3'
 import Section4 from '@/components/about/Section4'
@@ -57,6 +58,7 @@ const About = ({ meta , bluetxt , normaltxt }) => {
         {/* <Section3 /> */}
         <Section4 />
         <Section5 />
+        <WorldMapWithMarkers/>
         {/* <Section6 /> */}
         <Footer />
       </div>

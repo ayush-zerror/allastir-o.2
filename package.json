@@ -9,13 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@studio-freight/lenis": "^1.0.42",
     "@studio-freight/tempus": "^0.0.44",
+    "d3-geo": "^3.1.1",
     "gsap": "^3.12.5",
     "locomotive-scroll": "^5.0.0-beta.21",
     "next": "15.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-simple-maps": "^3.0.0",
+    "react-toastify": "^11.0.5",
     "remixicon": "^4.5.0",
     "swiper": "^11.1.14"
   },

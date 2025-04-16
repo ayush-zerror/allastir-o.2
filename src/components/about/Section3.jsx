@@ -8,9 +8,8 @@ const Section3 = () => {
     const bars = [
         { id: 1, target: "State-of-the-Art Facilities", title: "State-of-the-Art Facilities", description: "Our advanced manufacturing units, covering 225,000+ SQFT, ensure precision, efficiency, and scalability.", image:"/company-our-strengths.png" },
         { id: 2, target: "Trusted Industry Partnerships", title: "Trusted Industry Partnerships", description: "We collaborate with top Indian pharmaceutical MNCs, delivering high-quality API and formulations.", image:"/global-reach-our-strength.png" },
-        { id: 3, target: "Comprehensive Product Portfolio", title: "Comprehensive Product Portfolio", description: "With 40+ finished formulation dossiers and 25 niche API products, we cater to diverse therapeutic needs.", image:"/product-our-strengths.png" },
-        { id: 4, target: "Regulatory Excellence", title: "Regulatory Excellence", description: "We have 14 APIs with DMF, 5 CDSCO-approved APIs, and 6 APIs with completed toxicology studies.", image:"/Regulatory Excellence.png" },
-        { id: 5, target: "Pioneering Innovation", title: "Pioneering Innovation", description: "We have introduced 2 first-time-in-India APIs and have 6 niche API products currently under development.", image:"/Pioneering Innovation.png" },
+        { id: 3, target: "Regulatory Excellence", title: "Regulatory Excellence", description: "We have 14 APIs with DMF, 5 CDSCO-approved APIs, and 6 APIs with completed toxicology studies.", image:"/Regulatory Excellence.png" },
+        { id: 4, target: "Pioneering Innovation", title: "Pioneering Innovation", description: "We have introduced 2 first-time-in-India APIs and have 6 niche API products currently under development.", image:"/Pioneering Innovation.png" },
     ];
 
     return (
@@ -34,8 +33,8 @@ const Section3 = () => {
                                 alt={bar.title}
                             />
                             <div>
-                                <h4 className="sm:text-[5vw] md:text-[4vw] lg:text-[3vw] xl:text-[2vw] text-[1.1vw] font-semibold">{bar.title}</h4>
-                                <p className="sm:text-[4.5vw] md:text-[3.7vw] text-[#7F7F7F] sm:w-[80%] md:w-[80%]">{bar.description}</p>
+                                {/* <h4 className="sm:text-[5vw] md:text-[4vw] lg:text-[3vw] xl:text-[2vw] text-[1.1vw] font-semibold">{bar.title}</h4> */}
+                                <p className="sm:text-[5vw] md:text-[4vw] lg:text-[3vw] xl:text-[2vw] text-[1.1vw] font-semibold">{bar.description}</p>
                             </div>
                         </div>
                     </div>

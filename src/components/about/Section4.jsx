@@ -382,7 +382,7 @@ const Section4 = () => {
         };
     }, [])
     return (
-        <div className='timeline-section w-full  h-[100vh]  flex sm:flex-col md:flex-col lg:flex-col lg:gap-[5vw] sm:justify-center md:justify-center lg:justify-center items-start'>
+        <div className='timeline-section w-full  h-[100vh]  flex sm:flex-col md:flex-col lg:flex-col lg:gap-[5vw] sm:justify-center md:justify-center lg:justify-center items-center'>
             <div className='sm:w-full md:w-full lg:w-full w-[42%] sm:h-[50vh] md:h-[43vh] lg:h-[43vh]  h-full  flex flex-col justify-center pl-[2.5vw] sm:pl-[4vw] md:pl-[4vw] lg:pl-[4vw] xl:pt-[15vw] sm:pt-[15vw]  pt-[6vw] py-[1vw]'>
                 <h2 className='sm:text-[10vw] md:text-[7vw] lg:text-[7vw] text-[3vw] font-semibold  mb-[1vw] capitalize leading-[.7]'>Our Journey</h2>
                 <div className='sm:h-[18.5vw] md:h-[12.5vw] lg:h-[9vw] h-[10vw] w-fit overflow-hidden '>
@@ -479,7 +479,7 @@ const Section4 = () => {
                                             ))
                                         }
                                     </div>
-                                    <div className="w-full relative h-[15%]">
+                                    <div className="relative h-[15%] w-[70%]">
                                         {
                                             timelineData.map((data, i) => (
                                                 <p key={i} className={` timeline-para${i + 1} ${i === 0 ? '' : 'opacity-0'} text-white absolute w-[90%] lg:w-[70%] sm:text-[4.5vw]  md:text-[3.7vw] lg:text-[2.5vw] xl:text-[1.8vw]  text-[1vw] leading-1`}>{data.description}</p>

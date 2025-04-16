@@ -8,11 +8,12 @@ const ProductListing = ({ products }) => {
 
     const handleAddToBag = (product) => {
         // const productExists = cartItems.some(item => item.name === product.name);
-
+   
         // if (!productExists) {
         //     const updatedCart = [...cartItems, product];
         //     setCartItems(updatedCart);
         // } 
+        localStorage.setItem('cartItems', JSON.stringify(product));
         setIsCartOpen(true);
     };
 
@@ -28,9 +29,9 @@ const ProductListing = ({ products }) => {
                             onClick={() => setActiveIndex(i)}
                             className={`mb-[16px] text-center text-[14px] capitalize py-[13px] font-semibold rounded-full border border-gray-300 cursor-pointer transition 
                 ${activeIndex === i
-                                    ? 'bg-gradient-to-r from-[#DD2B1C] to-[#3D2E8D] text-white'
+                                    ? ' text-white bg-[#3D2E8D]'
                                     : 'bg-gray-100/50 text-black'
-                                } hover:bg-gradient-to-r from-[#DD2B1C] to-[#3D2E8D] hover:text-white`}
+                                } hover:bg-[#3D2E8D] hover:text-white`}
                         >
                             {product.title.charAt(0) + product.title.slice(1).toLowerCase()}
                         </li>
@@ -44,16 +45,17 @@ const ProductListing = ({ products }) => {
                         <img
                             src={product.image}
                             alt={product.title}
-                            className='w-full h-[200px] object-contain rounded-lg mb-4'
+                            className='w-full h-[160px] object-contain rounded-lg mb-4'
                         />
                         <h3 className='text-lg font-semibold mb-2 text-center'>{product.name}</h3>
+                        <p className='text-sm text-gray-900 mb-2 text-center'>{product.description}</p>
                         <p className='sm:text-[4.5vw] md:text-[3.7vw] lg:text-[2vw] xl:text-[1.8vw] text-[1vw]  text-gray-600 mb-16 text-center'>
                             Chlorphenamine maleate is a part of a series of antihistamines including pheniramine and its halogenated
                         </p>
 
                         {/* Slide up button */}
                         <div className='absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300'>
-                            <button onClick={handleAddToBag} className='px-4 py-2  sm:text-[4.4vw] md:text-[3.6vw] lg:text-[1.9vw] xl:text-[1.7vw] text-[.9vw]  bg-gradient-to-r from-[#DD2B1C] to-[#3D2E8D] text-white rounded-full'>
+                            <button onClick={()=>handleAddToBag(product)} className='px-4 py-2  sm:text-[4.4vw] md:text-[3.6vw] lg:text-[1.9vw] xl:text-[1.7vw] text-[.9vw]  bg-[#3D2E8D] hover:bg-[#2b206b] text-white rounded-full'>
                                 Enquire Now
                             </button>
                         </div>
