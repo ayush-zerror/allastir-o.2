@@ -89,7 +89,7 @@ const Section1 = ({ navRef, popup,bell }) => {
 
     return (
         <div className='hero w-full h-screen relative'>
-            <video ref={videoRef} muted loop playsInline className='w-full h-full object-cover brightness-[70%]' src="/videos/pharma.mp4"></video>
+            <video ref={videoRef} muted loop playsInline className='w-full h-full object-cover brightness-[70%]' src="/videos/allastir_hero_video.mp4"></video>
             <div className="overlay-hero w-full h-full absolute top-0 left-0  text-white flex flex-col items-center justify-center">
                 <div className='sm:hidden md:hidden lg:hidden  block overflow-hidden sm:h-[14vw] md:h-[12vw] xl:h-[7.2vw] lg:h-[9vw]  h-[5vw] font-semibold'>
                     <h1 className='hero-txt1 sm:text-[11vw] md:text-[9vw] lg:text-[7vw] xl:text-[6vw] text-[4vw] leading-none' style={{transform:"translateY(130%)"}}>Innovation driven</h1>
