@@ -10,8 +10,6 @@ const Section1 = () => {
         phone: '',
         email: '',
         message: '',
-        product: '',
-        cas: ""
     });
     const [errors, setErrors] = useState({});
     const [isLoading, setIsLoading] = useState(false); // Added loading state
@@ -60,37 +58,37 @@ const Section1 = () => {
         return Object.keys(newErrors).length === 0;
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-
-        if (validateForm()) {
-            setIsLoading(true);
-
-            // Simulate async form submission
-            try {
-                const dataToSend = {
-                    ...formData,
-                    formType: 'career',
-                };
-
-                // Replace this with your API call
-                await new Promise((resolve) => setTimeout(resolve, 2000));
-
-                toast.success('Form submitted successfully!');
-                setFormData({
-                    name: '',
-                    phone: '',
-                    email: '',
-                    message: '',
-                });
-                setErrors({});
-            } catch (error) {
-                toast.error('Something went wrong. Please try again.');
-            } finally {
-                setIsLoading(false);
-            }
-        }
-    };
+    const handleSubmit = (e) => {
+           e.preventDefault();
+           if (!validateForm()) return;
+   
+           let data = { ...formData, formType:"form2" };
+   
+           setIsLoading(true); // Set loading to true when submitting
+   
+           const url = "https://script.google.com/macros/s/AKfycbwa-5_zC4AmvEQXokUoPxBhi5GtoszTveWy64Pr0lcMvsJ5o8Bk7p2l863C0hB-EzQP/exec";
+           const formBody = new URLSearchParams(data).toString();
+   
+   
+           fetch(url, {
+               method: "POST",
+               headers: {
+                   "Content-Type": "application/x-www-form-urlencoded",
+               },
+               body: formBody,
+           })
+               .then((response) => response.text())
+               .then((data) => {
+                   setFormData({ name: '', phone: '', email: '', message: '' });
+                   setErrors({});
+                   setIsLoading(false); // Reset loading state after submission
+                   toast.success("Form submitted successfully!");
+               })
+               .catch((error) => {
+                   setIsLoading(false); // Reset loading state if there's an error
+                   toast.error("Submission failed. Please try again.");
+               });
+       };
 
 
 

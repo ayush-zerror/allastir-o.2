@@ -26,7 +26,7 @@ const clients = [
   '/client-logo/zydus.png',
 ];
 
-export default function App() {
+export default function Section5() {
   return (
     <div className="w-full flex items-center flex-col justify-center px-[2.5vw] py-[6vw] sm:my-[6vw]">
       <h2 className="sm:text-[10vw] md:text-[7vw] lg:text-[5vw] xl:text-[5vw] text-[3vw] font-semibold text-center">Our Clientele</h2>
@@ -37,7 +37,15 @@ export default function App() {
             delay: 2500,
             disableOnInteraction: false,
           }}
-          pagination={{ clickable: true }}
+          pagination={{
+            clickable: true,
+            renderBullet: (index, className) => {
+              if (index < 4) {
+                return `<span class="${className} custom-bullet"></span>`;
+              }
+              return '';
+            },
+          }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
           breakpoints={{

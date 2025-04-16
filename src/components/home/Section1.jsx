@@ -109,7 +109,7 @@ const Section1 = ({ navRef, popup,bell }) => {
                 <div className='hero-para flex flex-col items-center justify-center sm:gap-[4vw] md:gap-[6vw] lg:gap-[6vw] xl:gap-[4vw] xl:mt-[4vw] gap-[1vw] sm:mt-[2.5vw] md:mt-[2.5vw] opacity-0'>
                     <p className='sm:text-[4.5vw] md:text-[3.7vw] lg:text-[2.8vw] xl:text-[2.5vw] text-[1.4vw] sm:w-[90%] md:w-[80%] w-[56%] text-center'>Pioneering breakthroughs in healthcare with cutting-edge research and manufacturing.</p>
                     <Link href="/contact" className='flex items-center justify-center sm:h-[8vw] h-[4vw]'>
-                        <div className='text-white sm:text-[4.5vw] md:text-[3.7vw] lg:text-[2.8vw] bg-[#3D2E8D] w-fit capitalize sm:px-[4.5vw] md:px-[3.7vw] lg:px-[3.7vw] xl:px-[3.7vw]  px-[1.5vw] hover:px-[2vw] hover:sm:px-[5vw] hover:md:px-[4vw] transition-all duration-500 cursor-pointer sm:py-[2vw] md:py-[1vw] xl:py-[1vw] py-[.6vw] hover:sm:py-[2.5vw] hover:md:py-[1.5vw] hover:py-[1vw] rounded-full'>
+                        <div className='text-white sm:text-[4.5vw] md:text-[3.7vw] lg:text-[2.8vw] bg-[#DD2B1C] w-fit capitalize sm:px-[4.5vw] md:px-[3.7vw] lg:px-[3.7vw] xl:px-[3.7vw]  px-[1.5vw] hover:px-[2vw] hover:sm:px-[5vw] hover:md:px-[4vw] transition-all duration-500 cursor-pointer sm:py-[2vw] md:py-[1vw] xl:py-[1vw] py-[.6vw] hover:sm:py-[2.5vw] hover:md:py-[1.5vw] hover:py-[1vw] rounded-full'>
                             <h4>Connect us</h4>
                         </div>
                     </Link>

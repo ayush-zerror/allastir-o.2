@@ -74,13 +74,13 @@ const Cart = ({ isOpen, onClose }) => {
 
 
         if (cartItems) {
-            data = { ...formData, product: cartItems.name, cas: cartItems.description };
+            data = { ...formData, product: cartItems.name, cas: cartItems.description , formType:"form1" };
         }
 
 
         setIsLoading(true); // Set loading to true when submitting
 
-        const url = "https://script.google.com/macros/s/AKfycbwbmm9pHJGeywytIj6ggsgLGJ0sIhKy8gO_dEyxdsQURI1iHpZAc-2nnN2qXSJJHgb8Xg/exec";
+        const url = "https://script.google.com/macros/s/AKfycbwa-5_zC4AmvEQXokUoPxBhi5GtoszTveWy64Pr0lcMvsJ5o8Bk7p2l863C0hB-EzQP/exec";
         const formBody = new URLSearchParams(data).toString();
 
 

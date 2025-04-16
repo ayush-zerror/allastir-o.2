@@ -3,7 +3,7 @@ import React from 'react'
 
 const Section5 = () => {
   return (
-    <div className='px-[2.5vw] sm:px-[4vw] md:px-[4vw] flex sm:flex-col md:flex-col justify-between w-full min-h-screen py-[8vw] sm:gap-[15vw] md:gap-[6vw] gap-[.5vw]'>
+    <div className='px-[2.5vw] sm:px-[4vw] md:px-[4vw] flex sm:flex-col md:flex-col justify-between w-full min-h-screen py-[4vw] sm:gap-[15vw] md:gap-[6vw] gap-[.5vw]'>
        <div className='w-full  h-[100vh] sm:h-fit md:h-fit'>
         <div className="w-full sm:h-[40%] md:h-[40%] h-[40%]  flex flex-col justify-between pr-[5vw] sm:pb-[5vw] md:pb-[5vw] pb-[1.2vw]">
           <h2 className='sm:text-[7vw] md:text-[7vw] text-[3vw] leading-tight sm:mb-[6vw]'>Precision and Innovation Across Two Advanced Units.</h2>

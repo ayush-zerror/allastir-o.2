@@ -29,9 +29,9 @@ const ProductListing = ({ products }) => {
                             onClick={() => setActiveIndex(i)}
                             className={`mb-[16px] text-center text-[14px] capitalize py-[13px] font-semibold rounded-full border border-gray-300 cursor-pointer transition 
                 ${activeIndex === i
-                                    ? ' text-white bg-[#3D2E8D]'
+                                    ? ' text-white bg-[#DD2B1C]'
                                     : 'bg-gray-100/50 text-black'
-                                } hover:bg-[#3D2E8D] hover:text-white`}
+                                } hover:bg-[#DD2B1C] hover:text-white`}
                         >
                             {product.title.charAt(0) + product.title.slice(1).toLowerCase()}
                         </li>
@@ -55,7 +55,7 @@ const ProductListing = ({ products }) => {
 
                         {/* Slide up button */}
                         <div className='absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300'>
-                            <button onClick={()=>handleAddToBag(product)} className='px-4 py-2  sm:text-[4.4vw] md:text-[3.6vw] lg:text-[1.9vw] xl:text-[1.7vw] text-[.9vw]  bg-[#3D2E8D] hover:bg-[#2b206b] text-white rounded-full'>
+                            <button onClick={()=>handleAddToBag(product)} className='px-4 py-2  sm:text-[4.4vw] md:text-[3.6vw] lg:text-[1.9vw] xl:text-[1.7vw] text-[.9vw]  bg-[#DD2B1C] hover:bg-[#DD2B1C] text-white rounded-full'>
                                 Enquire Now
                             </button>
                         </div>

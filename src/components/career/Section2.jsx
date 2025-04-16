@@ -59,38 +59,38 @@ const Section2 = ({ sec2Ref }) => {
         return isValid;
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-
-        if (validateForm()) {
-            setLoading(true);
-
-            // Simulate async form submission
-            try {
-                const dataToSend = {
-                    ...formData,
-                    formType: 'career',
-                };
-
-                // Replace this with your API call
-                await new Promise((resolve) => setTimeout(resolve, 2000));
-
-                toast.success('Form submitted successfully!');
-                setFormData({
-                    name: '',
-                    email: '',
-                    phone: '',
-                    resume: null,
-                    remarks: '',
-                });
-                setErrors({});
-            } catch (error) {
-                toast.error('Something went wrong. Please try again.');
-            } finally {
-                setLoading(false);
-            }
-        }
-    };
+    const handleSubmit = (e) => {
+               e.preventDefault();
+               if (!validateForm()) return;
+       
+               let data = { ...formData, formType:"form3" };
+       
+               setLoading(true); // Set loading to true when submitting
+       
+               const url = "https://script.google.com/macros/s/AKfycbwa-5_zC4AmvEQXokUoPxBhi5GtoszTveWy64Pr0lcMvsJ5o8Bk7p2l863C0hB-EzQP/exec";
+               const formBody = new URLSearchParams(data).toString();
+       
+       
+               fetch(url, {
+                   method: "POST",
+                   headers: {
+                       "Content-Type": "application/x-www-form-urlencoded",
+                   },
+                   body: formBody,
+               })
+                   .then((response) => response.text())
+                   .then((data) => {
+                       setFormData({ name: '', phone: '', email: '', message: '', resume , remarks: '' });
+                       setErrors({});
+                       setLoading(false); // Reset loading state after submission
+                       toast.success("Form submitted successfully!");
+                   })
+                   .catch((error) => {
+                       setLoading(false); // Reset loading state if there's an error
+                       toast.error("Submission failed. Please try again.");
+                   });
+           };
+    
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -118,7 +118,7 @@ const Section2 = ({ sec2Ref }) => {
                     </p>
                 </div>
 
-                <form onSubmit={handleSubmit} className="w-full mt-[1.5vw] flex flex-col gap-[1.5vw] sm:gap-[3vw] md:gap-[3vw] sm:text-[3.8vw] md:text-[3.5vw]">
+                <form onSubmit={handleSubmit}  encType="multipart/form-data"  className="w-full mt-[1.5vw] flex flex-col gap-[1.5vw] sm:gap-[3vw] md:gap-[3vw] sm:text-[3.8vw] md:text-[3.5vw]">
                     <div className="w-full">
                         {errors.name && <p className="text-red-500 text-sm mb-1 sm:text-[3.5vw]">{errors.name}</p>}
                         <input

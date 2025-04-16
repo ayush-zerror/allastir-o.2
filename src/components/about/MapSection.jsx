@@ -26,7 +26,7 @@ const markers = [
 
 const WorldMap = () => {
     return (
-        <div className="w-full min-h-[80vh] flex  items-center justify-between p-10 pt-[0] pb-[8vw]">
+        <div className="w-full min-h-[80vh] flex  items-center justify-between p-10 py-[6vw] pb-[0]">
             {/* Left Side */}
             <div className="lg:w-1/2 w-full max-w-xl mb-10 lg:mb-0">
                 <h2 className="sm:text-[7vw] md:text-[7vw] mb-[2vw] text-[3vw] leading-tight sm:mb-[6vw]">

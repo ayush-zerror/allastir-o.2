@@ -81,7 +81,7 @@ const Navbar = ({ navRef }) => {
       <div className='flex items-center gap-[50px]'>
       <Link
               href="/contact"
-              className={`hover:bg-[#2b206b] bg-[#3D2E8D] text-white py-[.6vw] rounded-full font-semibold p-[2vw]  transition-all duration-75 relative"}`}
+              className={` bg-[#DD2B1C] text-white py-[.6vw] rounded-full font-semibold p-[2vw]  transition-all duration-75 relative"}`}
             >
               Contact
             </Link>
