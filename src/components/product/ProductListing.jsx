@@ -1,27 +1,38 @@
 import { CartContext } from '@/utils/context/Wrapper';
+import { useGSAP } from '@gsap/react';
 import React, { useContext, useState } from 'react'
 
 const ProductListing = ({ products }) => {
     const [activeIndex, setActiveIndex] = useState(0)
 
-    const { setIsCartOpen } = useContext(CartContext);
+    const { setIsCartOpen , setEnquireItems } = useContext(CartContext);
 
     const handleAddToBag = (product) => {
-        // const productExists = cartItems.some(item => item.name === product.name);
-   
-        // if (!productExists) {
-        //     const updatedCart = [...cartItems, product];
-        //     setCartItems(updatedCart);
-        // } 
-        localStorage.setItem('cartItems', JSON.stringify(product));
+        localStorage.removeItem('cartItems');
+        if(product){
+            setEnquireItems(product);
+        }
         setIsCartOpen(true);
     };
+
+    useGSAP(()=>{
+        document.querySelectorAll('.product-card-hover').forEach((el) => {
+            el.addEventListener('mouseenter', () => {
+                el.querySelector('.product-card-btn').classList.remove('opacity-0', 'translate-y-10')
+                el.querySelector('.product-card-btn').classList.add('opacity-100', 'translate-y-0')
+            })
+            el.addEventListener('mouseleave', () => {
+                el.querySelector('.product-card-btn').classList.remove('opacity-100', 'translate-y-0')
+                el.querySelector('.product-card-btn').classList.add('opacity-0', 'translate-y-10')
+            })
+        })
+    },[])
 
     return (
         <div className='relative w-full min-h-screen p-[11%] py-[6vw] pb-[0vw]'>
             <h2 className='sm:text-[7vw] md:text-[7vw] text-[3vw] leading-tight sm:mb-[6vw] mb-[6vw]'>Niche Product Offerings of 38 APIs.</h2>
             <div className='flex items-start justify-between '>
-            <div className='w-[17%] h-[calc(100vh-8vw)] overflow-y-auto pr-2'>
+            <div className='w-[17%] h-[calc(100vh-8vw)] pr-2'>
                 <ul>
                     {products.slice(0, 8).map((product, i) => (
                         <li
@@ -41,7 +52,7 @@ const ProductListing = ({ products }) => {
 
             <div className='w-[82%] px-[1%] grid grid-cols-3 gap-8'>
                 {products[activeIndex].product.map((product, i) => (
-                    <div key={i} className='relative bg-white rounded-xl transition-all duration-300 hover:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.2)] border border-gray-300 p-4 overflow-hidden group'>
+                    <div key={i} className='product-card-hover relative bg-white rounded-xl transition-all duration-300 hover:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.2)] border border-gray-300 p-4 overflow-hidden'>
                         <img
                             src={product.image}
                             alt={product.title}
@@ -54,7 +65,7 @@ const ProductListing = ({ products }) => {
                         </p>
 
                         {/* Slide up button */}
-                        <div className='absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300'>
+                        <div className='product-card-btn absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-10 opacity-0  transition-all duration-300'>
                             <button onClick={()=>handleAddToBag(product)} className='px-4 py-2  sm:text-[4.4vw] md:text-[3.6vw] lg:text-[1.9vw] xl:text-[1.7vw] text-[.9vw]  bg-[#DD2B1C] hover:bg-[#DD2B1C] text-white rounded-full'>
                                 Enquire Now
                             </button>

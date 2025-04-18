@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import gsap from 'gsap';
 import { toast } from 'react-toastify';
+import { CartContext } from '@/utils/context/Wrapper';
 
 const Cart = ({ isOpen, onClose }) => {
     const [formData, setFormData] = useState({
@@ -11,18 +12,20 @@ const Cart = ({ isOpen, onClose }) => {
         product: '',
         cas: ""
     });
-    const [cartItems, setCartItems] = useState(null);
+    // const [cartItems, setCartItems] = useState(null);
+    const { enquireItem, setEnquireItems } = useContext(CartContext);
+
 
     const [errors, setErrors] = useState({});
     const [isLoading, setIsLoading] = useState(false); // Added loading state
 
-    useEffect(() => {
-        const storedCartItems = localStorage.getItem('cartItems');
-        if (storedCartItems) {
-            setCartItems(JSON.parse(storedCartItems));
-        }
-    }, []); 
-    
+    // useEffect(() => {
+    //     const storedCartItems = localStorage.getItem('cartItems');
+    //     if (storedCartItems) {
+    //         setCartItems(JSON.parse(storedCartItems));
+    //     }
+    // }, []); 
+
     const handleChange = (e) => {
         const { name, value } = e.target;
 
@@ -74,7 +77,7 @@ const Cart = ({ isOpen, onClose }) => {
 
 
         if (cartItems) {
-            data = { ...formData, product: cartItems.name, cas: cartItems.description , formType:"form1" };
+            data = { ...formData, product: cartItems.name, cas: cartItems.description, formType: "form1" };
         }
 
 
@@ -135,11 +138,11 @@ const Cart = ({ isOpen, onClose }) => {
                     </div>
                     <form onSubmit={handleSubmit} className='w-full mt-[1.5vw] sm:mt-[0] flex flex-col sm:gap-[3vw] md:gap-[3vw] lg:gap-[3vw] gap-[1vw] sm:text-[3.5vw] md:text-[3vw] lg:text-[2.8vw]'>
                         {
-                            cartItems && <div className="flex items-center p-2 bg-gray-100 rounded">
+                            enquireItem ? <div className="flex items-center p-2 bg-gray-100 rounded">
                                 {/* Left side image with angle */}
                                 <div className="w-[60px] h-[60px] relative overflow-hidden">
                                     <img
-                                        src={cartItems.image}
+                                        src={enquireItem.image}
                                         className="w-full h-full object-cover"
                                         alt="logo"
                                     />
@@ -148,13 +151,13 @@ const Cart = ({ isOpen, onClose }) => {
                                 {/* Right side title and paragraph */}
                                 <div className="ml-4">
                                     <h2 className="sm:text-[4.5vw] md:text-[3.7vw] lg:text-[2.8vw] xl:text-[1.8vw] text-[1.1vw] font-semibold">
-                                        {cartItems.name}
+                                        {enquireItem.name}
                                     </h2>
                                     <p className="sm:text-[4.5vw] whitespace-nowrap md:text-[3.7vw] lg:text-[3vw] xl:text-[2vw] sm:w-full text-[1vw] w-[80%] sm:my-[4.5vw] md:my-[4.5vw] lg:my-[4.5vw] my-[.3vw] leading-1">
-                                        {cartItems.description}
+                                        {enquireItem.description}
                                     </p>
                                 </div>
-                            </div>
+                            </div> : ""
                         }
                         <div className='w-full flex flex-col'>
                             {errors.name && <span className="text-red-500 text-sm mb-1">{errors.name}</span>}
