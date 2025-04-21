@@ -131,7 +131,7 @@ const Cart = ({ isOpen, onClose }) => {
     return (
         <div id="cartOverlay" className="fixed top-0 left-0 w-full sm:h-[100dvh] h-screen bg-[#00000070] opacity-0 invisible z-[999] flex justify-end" onClick={onClose}>
             <div id='cartContainer' className="absolute right-[-50%] top-0 sm:w-[100vw] md:w-[100vw] lg:w-[100vw] xl:w-[60vw] w-[40vw] h-full bg-white shadow-lg sm:pt-[30px] p-4 overflow-hidden" onClick={(e) => e.stopPropagation()}>
-                <div className='w-full sm:h-[95vh] h-[100vh] sm:bg-transparent md:bg-transparent  sm:p-0 md:p-0 lg:p-0 sm:pt-[30vw] md:pt-[13vw] lg:pt-[13vw] xl:pt-[65vw]  p-[2vw] py-[0] pb-[2vw] flex flex-col justify-between'>
+                <div className='w-full sm:h-[95vh] h-[100vh] sm:bg-transparent md:bg-transparent  sm:p-0 md:p-0 lg:p-0 sm:pb-[10vw] md:pt-[13vw] lg:pt-[13vw] xl:pt-[65vw]  p-[2vw] py-[0] pb-[2vw] flex flex-col justify-between'>
                     <div className='w-full'>
                         <h1 className='sm:text-[10vw] md:text-[7vw] lg:text-[7vw] xl:text-[5vw] text-[3.5vw] sm:font-semibold capitalize leading-none'>Enquire Now</h1>
                         <p className='sm:text-[4.5vw] md:text-[3.7vw] lg:text-[3vw] xl:text-[2vw] sm:w-full text-[1vw] w-[80%] sm:my-[4.5vw] md:my-[4.5vw] lg:my-[4.5vw]  my-[1vw] leading-1'>Have questions or need product details? Fill out the form and our team will get back to you shortly.</p>
