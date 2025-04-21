@@ -1,3 +1,4 @@
+import Journey from '@/components/about/Journey'
 import WorldMapWithMarkers from '@/components/about/MapSection'
 import Section1 from '@/components/about/Section1'
 import Section3 from '@/components/about/Section3'
@@ -58,7 +59,8 @@ const About = ({ meta , bluetxt , normaltxt }) => {
         {/* <Section3 /> */}
         <Section5 />
         <WorldMapWithMarkers/>
-        <Section4 />
+        {/* <Section4 /> */}
+        <Journey/>
         {/* <Section6 /> */}
         <Footer />
       </div>
