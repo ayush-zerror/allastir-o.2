@@ -9,7 +9,7 @@ const Section4 = ({ products }) => {
                 <div className='product-marquee mq1 w-fit h-full flex items-start sm:gap-[1vw] md:gap-[1vw] gap-[.5vw] px-[.25vw]'>
                 {
                         products.map((data, i) => (
-                            <Link href="/product" className='mq-card relative overflow-hidden group border-gray-500 sm:w-[40vw] md:w-[20vw] lg:w-[25vw] xl:w-[25vw] w-[15vw] h-full'>
+                            <Link key={i} href="/product" className='mq-card relative overflow-hidden group border-gray-500 sm:w-[40vw] md:w-[20vw] lg:w-[25vw] xl:w-[25vw] w-[15vw] h-full'>
 
                             {/* Default View */}
                             <div className='card-front absolute top-0 left-0 w-full h-full z-10 transition-transform duration-500 group-hover:-translate-y-[80%]'>
@@ -44,7 +44,7 @@ const Section4 = ({ products }) => {
                 <div className='product-marquee mq2 w-fit h-full flex items-start sm:gap-[1vw] md:gap-[1vw] gap-[.5vw] px-[.25vw]'>
                     {
                         products.map((data, i) => (
-                            <Link href="/product" className='mq-card relative overflow-hidden group border-gray-500 sm:w-[40vw] md:w-[20vw] lg:w-[25vw] xl:w-[25vw] w-[15vw] h-full'>
+                            <Link key={i} href="/product" className='mq-card relative overflow-hidden group border-gray-500 sm:w-[40vw] md:w-[20vw] lg:w-[25vw] xl:w-[25vw] w-[15vw] h-full'>
 
                             {/* Default View */}
                             <div className='card-front absolute top-0 left-0 w-full h-full z-10 transition-transform duration-500 group-hover:-translate-y-[80%]'>

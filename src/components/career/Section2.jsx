@@ -109,7 +109,7 @@ const Section2 = ({ sec2Ref }) => {
     };
 
     return (
-        <div ref={sec2Ref} className="w-full min-h-screen flex items-center justify-center p-[2.5vw] sm:px-[4vw] sm:pt-[35vw] md:pt-[20vw] lg:pt-[15vw] pt-[5.5vw] bg-white">
+        <div ref={sec2Ref} className="w-full sm:min-h-[80vh] sm:py-[0] min-h-screen flex items-center justify-center p-[2.5vw] sm:px-[4vw]  md:pt-[20vw] lg:pt-[15vw] pt-[5.5vw] bg-white">
             <div className="sm:w-full md:w-full lg:w-full w-[50%] h-auto backdrop-blur-lg bg-white/60 border border-zinc-200 rounded-2xl p-[2.5vw] flex flex-col justify-between">
                 <div className="w-full">
                     <h1 className="sm:font-semibold sm:text-[7vw] md:text-[7vw] text-[3vw] sm:mb-[6vw] capitalize leading-none">Careers at Allastir</h1>

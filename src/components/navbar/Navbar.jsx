@@ -18,31 +18,31 @@ const Navbar = ({ navRef }) => {
     setIsMounted(true);
   }, []);
 
-  // const openSidebar = () => {
-  //   if (open) {
-  //     document.querySelector(".menu-icon").classList.remove("ri-close-line");
-  //     document.querySelector(".menu-icon").classList.add("ri-menu-fill");
-  //     // gsap.to(".side-menu", { top: "-100vh", duration: 0.3 });
-  //     gsap.to(".side-menu", {
-  //       opacity: 0, duration: 0.3,
-  //       onComplete: () => {
-  //         gsap.set(".side-menu", { pointerEvents: "none" })
-  //       }
-  //     });
-  //     setOpen(false);
-  //   } else {
-  //     document.querySelector(".menu-icon").classList.add("ri-close-line");
-  //     document.querySelector(".menu-icon").classList.remove("ri-menu-fill");
-  //     // gsap.to(".side-menu", { top: "100%", duration: 0.3 });
-  //     gsap.to(".side-menu", {
-  //       opacity: 1, duration: 0.3,
-  //       onComplete: () => {
-  //         gsap.set(".side-menu", { pointerEvents: "all" })
-  //       }
-  //     });
-  //     setOpen(true);
-  //   }
-  // };
+  const openSidebar = () => {
+    if (open) {
+      document.querySelector(".menu-icon").classList.remove("ri-close-line");
+      document.querySelector(".menu-icon").classList.add("ri-menu-fill");
+      // gsap.to(".side-menu", { top: "-100vh", duration: 0.3 });
+      gsap.to(".side-menu", {
+        opacity: 0, duration: 0.3,
+        onComplete: () => {
+          gsap.set(".side-menu", { pointerEvents: "none" })
+        }
+      });
+      setOpen(false);
+    } else {
+      document.querySelector(".menu-icon").classList.add("ri-close-line");
+      document.querySelector(".menu-icon").classList.remove("ri-menu-fill");
+      // gsap.to(".side-menu", { top: "100%", duration: 0.3 });
+      gsap.to(".side-menu", {
+        opacity: 1, duration: 0.3,
+        onComplete: () => {
+          gsap.set(".side-menu", { pointerEvents: "all" })
+        }
+      });
+      setOpen(true);
+    }
+  };
 
 
 
@@ -81,16 +81,16 @@ const Navbar = ({ navRef }) => {
       <div className='flex items-center gap-[50px]'>
       <Link
               href="/contact"
-              className={` bg-[#DD2B1C] text-white py-[.6vw] rounded-full font-semibold p-[2vw]  transition-all duration-75 relative"}`}
+              className={` sm:hidden md:hidden lg:hidden bg-[#DD2B1C]  text-white py-[.6vw] rounded-full font-semibold p-[2vw]  transition-all duration-75 relative"}`}
             >
               Contact
             </Link>
         {/* <span className='cursor-pointer relative flex items-center text-[20px]' onClick={() => setIsCartOpen(true)}>
           <i className="ri-shopping-cart-2-line"></i>
           {isMounted && cartItems.length > 0 ? <p className='absolute top-[-3px] right-[-13px] w-[18px] h-[18px] text-white bg-red-600 rounded-full flex items-center justify-center text-[10px]'>{cartItems.length}</p> : ''}
-        </span>
+        </span> */}
         <i onClick={openSidebar} className="menu-icon cursor-pointer ri-menu-fill text-[5.5vw] lg:text-[3.3vw] sm:block md:block lg:block hidden font-semibold"></i>
-      */}
+     
       </div>
       <div className='side-menu duration-300 w-[100%] sm:pt-[20vw] bg-white h-[90dvh] absolute top-[100%] opacity-0 pointer-events-none left-0 text-black sm:flex  sm:flex-col sm:justify-between md:flex lg:flex  hidden justify-end capitalize  text-left text-[5.5vw] lg:text-[3.5vw]'>
         <div className='w-full h-fit relative flex flex-col gap-[2vw] justify-center items-end bg-white p-[4vw]'>
