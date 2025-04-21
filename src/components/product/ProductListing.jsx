@@ -25,7 +25,7 @@ const ProductListing = ({ products }) => {
     }, []);
 
     return (
-        <div className='relative w-full min-h-screen sm:p-[20px] sm:py-[10vw] p-[11%] py-[6vw] pb-[0vw]'>
+        <div className='relative w-full min-h-fit sm:p-[20px] sm:py-[10vw] p-[11%] py-[6vw] pb-[0vw]'>
             <h2 className='sm:text-[7vw] md:text-[7vw] text-[3vw] leading-tight sm:mb-[6vw] mb-[6vw]'>
                 Niche Product Offerings of 38 APIs.
             </h2>
@@ -108,7 +108,7 @@ const ProductListing = ({ products }) => {
                         {products[activeIndex]?.product.map((product, i) => (
                             <div
                                 key={i}
-                                className='product-card-hover relative bg-white rounded-xl transition-all duration-300 hover:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.2)] border border-gray-300 p-4 overflow-hidden'
+                                className='product-card-hover relative bg-white rounded-xl  border hover:border-[#DD2B1C] border-gray-300 p-4 overflow-hidden'
                                 onMouseEnter={(e) => {
                                     const btn = e.currentTarget.querySelector('.product-card-btn');
                                     btn.classList.remove('opacity-0', 'translate-y-10');
