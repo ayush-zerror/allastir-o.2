@@ -7,17 +7,17 @@ gsap.registerPlugin(ScrollTrigger)
 const Journey = () => {
 
     const timelineData = [
-        { year: 2010, title: 'Inception & R&D', description: 'We founded Allastir with a vision to drive pharmaceutical innovation through dedicated research and development.', image: '/inception.webp' },
-        { year: 2012, title: 'First API Launched', description: 'We introduced our first API, LMF, marking the beginning of our journey as a key player in pharmaceutical manufacturing.', image: '/first-api.webp' },
-        { year: 2014, title: 'Expansion in API Portfolio', description: 'We launched Vitamin K2-7 API, further strengthening our expertise in niche and specialized pharmaceutical ingredients.', image: '/bended-caucasian.jpg' },
-        { year: 2016, title: 'Certified for Quality', description: 'We obtained GMP and ISO certifications, ensuring our manufacturing processes align with global regulatory standards.', image: '/caucasian-scientist.jpg' },
-        { year: 2018, title: 'Regulatory Milestone', description: 'We received CDSCO approval for Iguratimod and acquired land for the expansion of our second manufacturing facility.', image: '/chemist-researcher.jpg' },
-        { year: 2019, title: 'Growth & Development', description: 'We secured CDSCO approval for Fimasartan and initiated the construction of our second state-of-the-art manufacturing unit.', image: '/close-up.jpg' },
-        { year: 2020, title: 'Global Expansion', description: 'We began exporting APIs to international markets and registered our finished products for distribution in Myanmar.', image: '/laboratory-worker.jpg' },
-        { year: 2021, title: 'Finished Product Market Entry', description: 'We launched the export of finished pharmaceutical products and expanded our reach with registrations in Cambodia.', image: '/pharmaceutical-technician.jpg' },
-        { year: 2024, title: 'Scaling Operations', description: 'We commenced operations at Unit-II, significantly enhancing our production capacity and operational efficiency.', image: '/portrait-professional.jpg' },
-        { year: 2025, title: 'Entering Oncology Market', description: 'We are expanding into the anti-cancer drug market with a focus on innovation and a projected revenue of $16 million.', image: '/2025.webp' },
-        { year: 2027, title: 'Diversification & Growth', description: 'We plan to enter the hormonal and OTC drug markets, strengthening our portfolio and targeting $40 million in revenue.', image: '/diversification.jpg' },
+        { year: 2010, title: 'Inception & R&D', description: 'We founded Allastir with a vision to drive pharmaceutical innovation through dedicated research and development.', image: '/journey/image1.jpeg' },
+        { year: 2012, title: 'First API Launched', description: 'We introduced our first API, LMF, marking the beginning of our journey as a key player in pharmaceutical manufacturing.', image: '/journey/image2.jpeg' },
+        { year: 2014, title: 'Expansion in API Portfolio', description: 'We launched Vitamin K2-7 API, further strengthening our expertise in niche and specialized pharmaceutical ingredients.', image: '/journey/image3.jpeg' },
+        { year: 2016, title: 'Certified for Quality', description: 'We obtained GMP and ISO certifications, ensuring our manufacturing processes align with global regulatory standards.', image: '/journey/image4.jpeg' },
+        { year: 2018, title: 'Regulatory Milestone', description: 'We received CDSCO approval for Iguratimod and acquired land for the expansion of our second manufacturing facility.', image: '/journey/image5.jpeg' },
+        { year: 2019, title: 'Growth & Development', description: 'We secured CDSCO approval for Fimasartan and initiated the construction of our second state-of-the-art manufacturing unit.', image: '/journey/image6.jpeg' },
+        { year: 2020, title: 'Global Expansion', description: 'We began exporting APIs to international markets and registered our finished products for distribution in Myanmar.', image: '/journey/image7.jpeg' },
+        { year: 2021, title: 'Finished Product Market Entry', description: 'We launched the export of finished pharmaceutical products and expanded our reach with registrations in Cambodia.', image: '/journey/image8.jpeg' },
+        { year: 2024, title: 'Scaling Operations', description: 'We commenced operations at Unit-II, significantly enhancing our production capacity and operational efficiency.', image: '/journey/image9.jpeg' },
+        { year: 2025, title: 'Entering Oncology Market', description: 'We are expanding into the anti-cancer drug market with a focus on innovation and a projected revenue of $16 million.', image: '/journey/image10.jpeg' },
+        { year: 2027, title: 'Diversification & Growth', description: 'We plan to enter the hormonal and OTC drug markets, strengthening our portfolio and targeting $40 million in revenue.', image: '/journey/image11.jpeg' },
     ];
 
     useEffect(() => {

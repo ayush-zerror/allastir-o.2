@@ -6,17 +6,17 @@ export const productData = [
         {
           name: "Amoralfine HCL",
           description: "CAS No 78613-38-4",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/pheniramine-maleate.jpg"
+          image: "/product/Amorolfine Hydrochloride.png"
         },
         {
           name: "Posaconazole",
           description: "CAS No 171228-49-2",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/brompheniramine-maleate.jpg"
+          image: "/product/Posaconazole.png"
         },
         {
           name: "Naftifine Hcl",
           description: "CAS No 65473-14-5",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/brompheniramine-maleate.jpg"
+          image: "/product/Naftifine Hydrochloride.png"
         },
       ]
     },
@@ -26,12 +26,12 @@ export const productData = [
         {
           name: "Voglibose JP ",
           description: "CAS No 83480-29-9",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/chlorphenamine-maleate.jpg"
+          image: "/product/Voglibose.png"
         },
         {
           name: "Lobeglitazone Sulphate",
           description: "CAS No763108-62-9",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/pheniramine-maleate.jpg"
+          image: "/product/Lobeglitazone.png"
         }
       ]
     },
@@ -41,12 +41,12 @@ export const productData = [
         {
           name: "Dolutegravir Sodium",
           description: "CAS No 1051375-19-9",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/brompheniramine-maleate.jpg"
+          image: "/product/Dolutegravir Sodium.png"
         },
         {
           name: "Inosine Pranobex",
           description: "CAS No 36703-88-5",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/dex-chlorpheniramine-maleate.jpg"
+          image: "/product/Inosine Pranobex.png"
         }
       ]
     },
@@ -56,7 +56,7 @@ export const productData = [
         {
           name: "Torsemide USP",
           description: "CAS No 56211-40-6 ",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/mepyramine-maleate.jpg"
+          image: "/product/Torsemide.gif"
         }
       ]
     },
@@ -66,7 +66,7 @@ export const productData = [
         {
           name: "Topiroxostat",
           description: "CAS No 577778-58-6",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/diphenhydramine-hydrochloride.jpg"
+          image: "/product/Topiroxostat.png"
         }
       ]
     },
@@ -76,7 +76,7 @@ export const productData = [
         {
           name: "Valethemate Bromide",
           description: "CAS No 90-22-2",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/salbutamol-sulphate.jpg"
+          image: "/product/Valethamate bromide.jpg"
         }
       ]
     },
@@ -86,7 +86,7 @@ export const productData = [
         {
           name: "D-Chiro Inositol",
           description: "CAS No 643-12-9",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/levosalbutamol-sulphate.jpg"
+          image: "/product/D-Chiro Inositol.png"
         }
       ]
     },
@@ -96,7 +96,7 @@ export const productData = [
         {
           name: "Iguratimod",
           description: "CAS No 123663-49-0",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/dextromethorphan-hydrobromide.jpg"
+          image: "/product/Iguratimod.png"
         }
       ]
     },
@@ -116,7 +116,7 @@ export const productData = [
         {
           name: "Perfenidone BP",
           description: "CAS No 53179-13-8",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/s-ketamine-hydrochloride-esketamine-hydrochloride.jpg"
+          image: "/product/Perfenidone BP.png"
         }
       ]
     },
@@ -126,7 +126,7 @@ export const productData = [
         {
           name: "Linezolid",
           description: "CAS No 165800-03-3",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/tramadol-hydrochloride.jpg"
+          image: "/product/Linezolid.png"
         }
       ]
     },
@@ -146,7 +146,7 @@ export const productData = [
         {
           name: "Silodosin",
           description: "CAS No 160970-54-7",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/artemether-ip-ph-int-usp.jpg"
+          image: "/product/Silodosin.png"
         }
       ]
     },
@@ -156,7 +156,7 @@ export const productData = [
         {
           name: "Cenobamate",
           description: "CAS No 913088-80-9",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/lumefantrine.jpg"
+          image: "/product/Cenobamate.png"
         }
       ]
     },
@@ -166,7 +166,7 @@ export const productData = [
         {
           name: "Polydatin",
           description: "CAS No 65914-17-2",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/alluporinol.jpg"
+          image: "/product/Polydatin.png"
         }
       ]
     },
@@ -176,7 +176,7 @@ export const productData = [
         {
           name: "L-Methylfolate/Calcium-L-5-methyl tetrahydrofolate",
           description: "CAS No 151533-22-1",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/chlorphenamine-maleate.jpg"
+          image: "/product/L methylfolate.gif"
         },
         {
           name: "(6S)-L-5methyltetrahydrofolic acid, glucosamine salt",
@@ -191,47 +191,47 @@ export const productData = [
         {
           name: "Vitamin K2-7/Menaquinone-7 USP",
           description: "CAS No 2124-57-4 ",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/dex-chlorpheniramine-maleate.jpg"
+          image: "/product/Vitamin K2-7.png"
         },
         {
           name: "Pyridoxal-5-phosophate ",
           description: "CAS No 54-47-7",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/mepyramine-maleate.jpg"
+          image: "/product/Pyridoxal 5 phosphate.jpg"
         },
         {
           name: "Rutin Trihydrate",
           description: "CAS No 250249-75-3 ",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/dexbrompheniramine-maleate.jpg"
+          image: "/product/Rutin Trihydrate.png"
         },
         {
           name: "Ubidecarenone",
           description: "CAS No 303-98-0",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/cetirizine-di-hydrochloride.jpg"
+          image: "/product/Ubidecarenone.png"
         },
         {
           name: "Ubiquinol acetate",
           description: "CAS No 992-78-9",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/diphenhydramine-hydrochloride.jpg"
+          image: "/product/Ubiquinol Acetate.png"
         },
         {
           name: "Tocopherol Polyethylene Glycol Succinate ",
           description: "CAS No 9002-96-4",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/salbutamol-sulphate.jpg"
+          image: "/product/Tocopherol Polyethylene Glycol Succinate.jpg"
         },
         {
           name: "Palmitoyl ethanolamide ",
           description: "CAS No 544-31-0",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/levosalbutamol-sulphate.jpg"
+          image: "/product/Palmitoyl ethanolamide.gif"
         },
         {
           name: "Oleoyl ethanolamide",
           description: "CAS No 111-58-0 ",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/dextromethorphan-hydrobromide.jpg"
+          image: "/product/Oleoyl Ethanolamide.png"
         },
         {
           name: "Luteolin",
           description: "CAS No 491-70-3",
-          image: "https://www.supriyalifescience.com/assets/images/diagrams/ketamine-hydrochloride.jpg"
+          image: "/product/Luteolin.png"
         }
       ]
     },
