@@ -79,11 +79,6 @@ const Product = ({  meta, products }) => {
       <div className='w-full relative overflow-hidden'>
         <Navbar navRef={navRef} />
         <Section1 sec1Ref={sec1Ref} />
-        {/* <div ref={sec2Ref} className='pb-[5vw]'>
-          {
-            products.map((data, i) => <Section2 key={i} data={data} />)
-          }
-        </div> */}
         <ProductListing products={products}/>
         <Footer />
       </div>

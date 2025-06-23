@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import gsap from 'gsap';
 import { toast } from 'react-toastify';
 import { CartContext } from '@/utils/context/Wrapper';
+import Image from 'next/image';
 
 const Cart = ({ isOpen, onClose }) => {
     const [formData, setFormData] = useState({
@@ -140,10 +141,12 @@ const Cart = ({ isOpen, onClose }) => {
                         {
                             enquireItem ? <div className="flex items-center p-2 bg-gray-100 rounded">
                                 {/* Left side image with angle */}
-                                <div className="w-[60px] h-[60px] relative overflow-hidden">
-                                    <img
+                                <div className="w-[60px] h-[60px] relative overflow-hidden bg-white">
+                                    <Image
+                                    width={1000}
+                                    height={1000}
                                         src={enquireItem.image}
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-contain"
                                         alt="logo"
                                     />
                                 </div>

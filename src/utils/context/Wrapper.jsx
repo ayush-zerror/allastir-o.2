@@ -14,7 +14,6 @@ export const CartContext = createContext({
 
 const Wrapper = ({ children }) => {
     const [isCartOpen, setIsCartOpen] = useState(false);
-    const [isPdf, setIsPdf] = useState(false);
     const [cartItems, setCartItems] = useState([]);
     const [enquireItem, setEnquireItems] = useState({});
 
@@ -34,8 +33,7 @@ const Wrapper = ({ children }) => {
     // }, [cartItems]);
 
     return (
-        <CartContext.Provider value={{ isCartOpen, setIsCartOpen, cartItems, setCartItems, isPdf, setIsPdf,enquireItem, setEnquireItems }}>
-            {isPdf && <PdfViewer fileUrl="/Allaster_Brochure.pdf" />}
+        <CartContext.Provider value={{ isCartOpen, setIsCartOpen, cartItems, setCartItems, enquireItem, setEnquireItems }}>
             <Cart isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
             {children}
         </CartContext.Provider>

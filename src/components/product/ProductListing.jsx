@@ -1,4 +1,5 @@
 import { CartContext } from '@/utils/context/Wrapper';
+import Image from 'next/image';
 import React, { useContext, useState, useEffect } from 'react';
 
 const ProductListing = ({ products }) => {
@@ -54,10 +55,12 @@ const ProductListing = ({ products }) => {
                                             key={idx}
                                             className='relative bg-white rounded-xl border border-gray-300 p-4'
                                         >
-                                            <img
+                                            <Image
+                                            width={1000}
+                                            height={1000}
                                                 src={product.image}
                                                 alt={product.title}
-                                                className='w-full h-[160px] object-contain rounded-lg mb-4'
+                                                className='w-full h-[160px] object-contain rounded-lg mb-4 grayscale'
                                             />
                                             <h3 className='text-lg font-semibold mb-2 text-center'>
                                                 {product.name}
@@ -85,10 +88,10 @@ const ProductListing = ({ products }) => {
                 </div>
             ) : (
                 // Desktop Grid Layout
-                <div className='flex items-start justify-between '>
-                    <div className='w-[17%] h-[calc(100vh-8vw)] pr-2'>
+                <div className='flex items-start justify-between pb-[8vw]'>
+                    <div id='scroll-bar' className='w-[17%] h-[calc(100vh-10vw)] pr-2 overflow-auto' data-lenis-prevent>
                         <ul>
-                            {products.slice(0, 8).map((product, i) => (
+                            {products.map((product, i) => (
                                 <li
                                     key={i}
                                     onClick={() => setActiveIndex(i)}
@@ -120,10 +123,12 @@ const ProductListing = ({ products }) => {
                                     btn.classList.add('opacity-0', 'translate-y-10');
                                 }}
                             >
-                                <img
+                                <Image
+                                width={1000}
+                                height={1000}
                                     src={product.image}
                                     alt={product.title}
-                                    className='w-full h-[160px] object-contain rounded-lg mb-4'
+                                    className='w-full h-[160px] object-contain rounded-lg mb-4 grayscale'
                                 />
                                 <h3 className='text-lg font-semibold mb-2 text-center'>{product.name}</h3>
                                 <p className='text-sm text-gray-900 mb-2 text-center'>{product.description}</p>
@@ -144,7 +149,7 @@ const ProductListing = ({ products }) => {
 
             {/* Background */}
             <div className='w-[170%] h-[120vh] -z-10 absolute left-[40%] -translate-x-1/2 top-[-5%]'>
-                <img className='w-full h-full object-cover object-center' src="https://www.supriyalifescience.com/assets/images/bg/abstract3.svg" alt="" />
+                <Image width={1000} height={1000} className='w-full h-full object-cover object-center' src="https://www.supriyalifescience.com/assets/images/bg/abstract3.svg" alt="bg-image" />
             </div>
         </div>
     );

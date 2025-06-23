@@ -8,7 +8,7 @@ export const menus = [
     name: "About",
   },
   {
-    path: "/Allaster_Brochure.pdf",
+    path: "/Allaster-Brochure.pdf",
     name: "Brochure" ,
   },
   {
