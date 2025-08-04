@@ -1,9 +1,7 @@
 import Journey from '@/components/about/Journey'
 import WorldMapWithMarkers from '@/components/about/MapSection'
 import Section1 from '@/components/about/Section1'
-import Section3 from '@/components/about/Section3'
 import Section5 from '@/components/about/Section5'
-import Section6 from '@/components/about/Section6'
 import Footer from '@/components/footer/Footer'
 import Section2 from '@/components/home/Section2'
 import Navbar from '@/components/navbar/Navbar'
@@ -55,11 +53,9 @@ const About = ({ meta , bluetxt , normaltxt }) => {
         <Navbar navRef={navRef} />
         <Section1 sec1Ref={sec1Ref} />
         <Section2 sec2Ref={sec2Ref} bluetxt={bluetxt} normaltxt={normaltxt} />
-        {/* <Section3 /> */}
         <Section5 />
         <WorldMapWithMarkers/>
         <Journey/>
-        {/* <Section6 /> */}
         <Footer />
       </div>
     </>
