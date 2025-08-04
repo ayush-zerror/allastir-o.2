@@ -3,24 +3,16 @@ import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const Navbar = ({ navRef }) => {
-  // const { setIsPdf } = useContext(CartContext);
   const [open, setOpen] = useState(false);
-  // const { cartItems, setIsCartOpen } = useContext(CartContext);
-  const [isMounted, setIsMounted] = useState(false);
   const router = useRouter();
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
 
   const openSidebar = () => {
     if (open) {
       document.querySelector(".menu-icon").classList.remove("ri-close-line");
       document.querySelector(".menu-icon").classList.add("ri-menu-fill");
-      // gsap.to(".side-menu", { top: "-100vh", duration: 0.3 });
       gsap.to(".side-menu", {
         opacity: 0,
         duration: 0.3,
@@ -32,7 +24,6 @@ const Navbar = ({ navRef }) => {
     } else {
       document.querySelector(".menu-icon").classList.add("ri-close-line");
       document.querySelector(".menu-icon").classList.remove("ri-menu-fill");
-      // gsap.to(".side-menu", { top: "100%", duration: 0.3 });
       gsap.to(".side-menu", {
         opacity: 1,
         duration: 0.3,
@@ -44,14 +35,10 @@ const Navbar = ({ navRef }) => {
     }
   };
 
-  // const handlePdf = () => {
-  //   setIsPdf(true);
-  // };
-
   return (
     <div
       ref={navRef}
-      className="w-full sm:px-[4vw] md:px-[4vw] lg:px-[4vw] px-[2.5vw] sm:py-[3.1vw] md:py-[3.1vw] lg:py-[3.1vw] py-[.8vw] text-black bg-white flex items-center justify-between fixed z-[99] top-0 left-0"
+      className="w-full sm:px-[4vw] md:px-[4vw] lg:px-[4vw] px-[2.5vw] sm:py-[3.1vw] md:py-[3.1vw] lg:py-[3.1vw] py-[.8vw] text-black bg-white flex items-center justify-between fixed z-10 top-0 left-0"
       style={{ backdropFilter: "blur(40px)" }}
     >
       <Link href="/">
@@ -101,10 +88,6 @@ const Navbar = ({ navRef }) => {
         >
           Contact
         </Link>
-        {/* <span className='cursor-pointer relative flex items-center text-[20px]' onClick={() => setIsCartOpen(true)}>
-          <i className="ri-shopping-cart-2-line"></i>
-          {isMounted && cartItems.length > 0 ? <p className='absolute top-[-3px] right-[-13px] w-[18px] h-[18px] text-white bg-red-600 rounded-full flex items-center justify-center text-[10px]'>{cartItems.length}</p> : ''}
-        </span> */}
         <i
           onClick={openSidebar}
           className="menu-icon cursor-pointer ri-menu-fill text-[5.5vw] lg:text-[3.3vw] sm:block md:block lg:block hidden font-semibold"
