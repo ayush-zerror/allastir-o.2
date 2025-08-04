@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
 const NotificationCard = ({
@@ -52,6 +53,7 @@ const Popup = () => {
   const [showNotification2, setShowNotification2] = useState(true);
   const [showFullPopup, setShowFullPopup] = useState(false);
   const [popupImage, setPopupImage] = useState("/events/event1.jpg");
+  const router = useRouter()
 
   const handleViewDetails = (image, notificationNum) => {
     setPopupImage(image);
@@ -73,13 +75,13 @@ const Popup = () => {
       {
         x: 0,
         opacity: 1,
-        duration: 0.6,
+        duration: 1,
         stagger: 0.15,
         ease: "power3.out",
       }
     );
   }
-}, [showNotification1, showNotification2]);
+}, [showNotification1, showNotification2 , router.asPath]);
 
   return (
     <div className="fixed bottom-0 right-0 z-[99] p-6 flex items-end justify-end">
