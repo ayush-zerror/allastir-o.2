@@ -103,7 +103,7 @@ const Popup = () => {
             imageLeft="/events/cphi_frankfurt.png"
             imageRight="/events/frankfurt.jpeg"
             date="28th–30th October 2025"
-            location="Messe Frankfurt, Germany"
+            location="Messe frankfurt, Frankfurt Germany"
             stall="Stall No. 12.1 F 40"
             onClose={() => setShowNotification1(false)}
             onView={() => handleViewDetails("/events/event1.jpg", 1)}
@@ -115,7 +115,7 @@ const Popup = () => {
             imageLeft="/events/cphi_india.png"
             imageRight="/events/redfort.jpg"
             date="25th–27th November 2025"
-            location="India Expo Center, Greater Noida, Delhi NCR"
+            location="India Expo Center (IEML), Greater Noida, Delhi NCR"
             stall="Hall B, Stall No. RH.N 19"
             onClose={() => setShowNotification2(false)}
             onView={() => handleViewDetails("/events/event2.jpg", 2)}
