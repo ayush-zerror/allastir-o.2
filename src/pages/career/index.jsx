@@ -10,23 +10,23 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Contact = ({ meta }) => {
 
-  const navRef = useRef(null)
+  // const navRef = useRef(null)
   const sec1Ref = useRef(null)
   const sec2Ref = useRef(null)
 
   useEffect(() => {
-    if (!sec1Ref.current || !sec2Ref.current || !navRef.current) return;
+    if (!sec1Ref.current || !sec2Ref.current) return;
 
     if (window.innerWidth < 600) {
       gsap.set(sec1Ref.current, { opacity: 0 });
       gsap.set(sec1Ref.current.querySelector("h2"), { y: "100%" });
       gsap.set(sec2Ref.current, { y: "80", opacity: 0 });
-      gsap.set(navRef.current, { opacity: 0 });
+      // gsap.set(navRef.current, { opacity: 0 });
 
       var tl = gsap.timeline();
       tl
         .to(sec1Ref.current, { opacity: 1, duration: 0.4, ease: "power4.in" }, "a")
-        .to(navRef.current, { opacity: 1, duration: 0.4 }, "a")
+        // .to(navRef.current, { opacity: 1, duration: 0.4 }, "a")
         .to(sec1Ref.current.querySelector("h2"), { y: 0, duration: 0.3 }, "b")
         .to(sec2Ref.current, { y: 0, opacity: 1, duration: 0.3 }, "b");
     } else {
@@ -48,10 +48,10 @@ const Contact = ({ meta }) => {
     <>
       <SeoHeader meta={meta} />
       <div className='w-full relative overflow-hidden'>
-        <Navbar navRef={navRef} />
+        {/* <Navbar navRef={navRef} /> */}
         <Section1 sec1Ref={sec1Ref} />
         <Section2 sec2Ref={sec2Ref} />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   )

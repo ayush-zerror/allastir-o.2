@@ -8,11 +8,11 @@ import { ToastContainer, toast } from 'react-toastify';
 export default function App({ Component, pageProps }) {
   return (
     <>
-    <Wrapper>
       <SmoothScroll />
-      <Component {...pageProps} />
-    </Wrapper>
-    <ToastContainer />
+      <Wrapper>
+        <Component {...pageProps} />
+      </Wrapper>
+      <ToastContainer />
     </>
   );
 }

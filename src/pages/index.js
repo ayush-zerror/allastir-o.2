@@ -12,22 +12,22 @@ import { productData } from '@/helpers/ProductData'
 import React, { useRef } from 'react'
 
 const Home = ({meta, bluetxt, normaltxt,products }) => {
-  const navRef = useRef(null)
+  // const navRef = useRef(null)
   const popup = useRef(null)
   const bell = useRef(null)
   return (
    <>
    <SeoHeader meta={meta}/>
     <div className='relative overflow-hidden'>
-      <Navbar navRef={navRef} />
+      {/* <Navbar navRef={navRef} /> */}
       <Popup popup={popup} bell={bell}/>
-      <Section1 navRef={navRef} popup={popup} bell={bell} />
+      <Section1 popup={popup} bell={bell} />
       <Section2 bluetxt={bluetxt} normaltxt={normaltxt} />
       <Section3 />
       <Section4 products={products} />
       <Section5 />
       <Section6 />
-      <Footer />
+      {/* <Footer /> */}
     </div>
    </>
   )

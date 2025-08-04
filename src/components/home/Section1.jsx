@@ -4,7 +4,7 @@ import Link from 'next/link'
 import React, { useEffect, useRef } from 'react'
 gsap.registerPlugin(ScrollTrigger)
 
-const Section1 = ({ navRef, popup,bell }) => {
+const Section1 = ({ popup,bell }) => {
     const videoRef = useRef(null)
     useEffect(() => {
         if(window.innerWidth < 600){
@@ -12,7 +12,7 @@ const Section1 = ({ navRef, popup,bell }) => {
             gsap.set(popup.current.querySelector(".close"), {scale: 1,})
             gsap.set(popup.current, {display:"none",})
             gsap.set(videoRef.current, { opacity: 0 })
-            gsap.set(navRef.current, { opacity:0 })
+            // gsap.set(navRef.current, { opacity:0 })
             var tl = gsap.timeline()
             tl
                 .to(videoRef.current, {
@@ -27,10 +27,10 @@ const Section1 = ({ navRef, popup,bell }) => {
                     transform: "translateY(0%)",
                     duration: .3,
                 },"a")
-                .to(navRef.current, {
-                    opacity:1,
-                    duration: .3
-                },"a")
+                // .to(navRef.current, {
+                //     opacity:1,
+                //     duration: .3
+                // },"a")
                 .to(".hero-para", {
                     opacity: 1,
                     duration: .3,

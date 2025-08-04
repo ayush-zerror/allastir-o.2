@@ -9,7 +9,7 @@ import { productData } from '@/helpers/ProductData'
 import ProductListing from '@/components/product/ProductListing'
 
 const Product = ({  meta, products }) => {
-  const navRef = useRef(null)
+  // const navRef = useRef(null)
   const sec1Ref = useRef(null)
   const sec2Ref = useRef(null)
 
@@ -18,7 +18,7 @@ const Product = ({  meta, products }) => {
       gsap.set(sec1Ref.current, { opacity: 0 })
       gsap.set(sec1Ref.current.querySelector("h2"), { y: "100%" })
       gsap.set(sec2Ref.current, { y: 80, opacity: 0 })
-      gsap.set(navRef.current, { opacity: 0 })
+      // gsap.set(navRef.current, { opacity: 0 })
       var tl = gsap.timeline()
       tl
         .to(sec1Ref.current, {
@@ -26,10 +26,10 @@ const Product = ({  meta, products }) => {
           duration: .4,
           ease: "power4.in",
         }, "a")
-        .to(navRef.current, {
-          opacity: 1,
-          duration: .4
-        }, "a")
+        // .to(navRef.current, {
+        //   opacity: 1,
+        //   duration: .4
+        // }, "a")
         .to(sec1Ref.current.querySelector("h2"), {
           y: 0,
           duration: .3
@@ -77,10 +77,10 @@ const Product = ({  meta, products }) => {
     <>
       <SeoHeader meta={meta} />
       <div className='w-full relative overflow-hidden'>
-        <Navbar navRef={navRef} />
+        {/* <Navbar navRef={navRef} /> */}
         <Section1 sec1Ref={sec1Ref} />
         <ProductListing products={products}/>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   )

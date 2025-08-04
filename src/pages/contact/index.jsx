@@ -9,9 +9,9 @@ const Contact = ({meta}) => {
     <>
     <SeoHeader meta={meta}/>
     <div className='w-full relative overflow-hidden'>
-        <Navbar/>
+        {/* <Navbar/> */}
         <Section1/>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
     </>
   )
