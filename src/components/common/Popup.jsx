@@ -2,58 +2,14 @@ import gsap from "gsap";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-
-const NotificationCard = ({
-  imageLeft,
-  imageRight,
-  date,
-  location,
-  stall,
-  onClose,
-  onView,
-}) => (
-  <div className="notification  overflow-hidden relative pointer-events-auto bg-[#003F3E] rounded-xl flex items-center justify-between sm:gap-[3vw] gap-[1vw] sm:p-[4vw]">
-    <Image
-      className="w-[160px]"
-      width={160}
-      height={120}
-      src={imageLeft}
-      alt="event"
-    />
-    <div className="popup_text w-[170px] text-white flex flex-col text-[.7vw] relative">
-      <h2 className="font-semibold">{date}</h2>
-      <p className="leading-snug">{location}</p>
-      <span className="font-semibold mt-1">Visit us at</span>
-      <span className="font-semibold">{stall}</span>
-      <button
-        onClick={onView}
-        className="w-fit mt-[.7vw] py-[.3vw] px-[.9vw] sm:py-[1.5vw] sm:px-[4vw] bg-white text-[#003F3E] font-semibold rounded-full"
-      >
-        View Details
-      </button>
-    </div>
-    <Image
-      className="h-[140px] w-[230px] object-cover"
-      width={230}
-      height={140}
-      src={imageRight}
-      alt="event right"
-    />
-    <div
-      onClick={onClose}
-      className="absolute top-[.5vw] right-[.5vw] sm:top-[1.5vw] sm:right-[1.5vw] rounded-full bg-black/10 hover:bg-black/20 w-[1.5vw] h-[1.5vw] sm:w-[7vw] sm:h-[7vw] cursor-pointer flex items-center justify-center"
-    >
-      <i className="ri-close-line text-[1vw] sm:text-[5vw]"></i>
-    </div>
-  </div>
-);
+import NotificationCard from "./NotificationCard";
 
 const Popup = () => {
   const [showNotification1, setShowNotification1] = useState(true);
   const [showNotification2, setShowNotification2] = useState(true);
   const [showFullPopup, setShowFullPopup] = useState(false);
   const [popupImage, setPopupImage] = useState("/events/event1.jpg");
-  const router = useRouter()
+  const router = useRouter();
 
   const handleViewDetails = (image, notificationNum) => {
     setPopupImage(image);
@@ -64,24 +20,24 @@ const Popup = () => {
 
   const showBell = !showNotification1 && !showNotification2;
 
- useEffect(() => {
-  if (showNotification1 || showNotification2) {
-    gsap.fromTo(
-      ".notification",
-      {
-        x: 50,
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1,
-        stagger: 0.15,
-        ease: "power3.out",
-      }
-    );
-  }
-}, [showNotification1, showNotification2 , router.asPath]);
+  useEffect(() => {
+    if (showNotification1 || showNotification2) {
+      gsap.fromTo(
+        ".notification",
+        {
+          x: 50,
+          opacity: 0,
+        },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 1,
+          stagger: 0.15,
+          ease: "power3.out",
+        }
+      );
+    }
+  }, [showNotification1, showNotification2, router.asPath]);
 
   return (
     <div className="fixed bottom-0 right-0 z-[99] p-6 flex items-end justify-end">
@@ -129,14 +85,14 @@ const Popup = () => {
       {showFullPopup && (
         <div
           data-lenis-prevent
-          className="fixed top-0 left-0 w-full h-full bg-black z-50 flex flex-col items-center py-[3vw] justify-start overflow-y-auto"
+          className="fixed top-0 left-0 w-full h-full bg-black z-50 flex flex-col sm:justify-center items-center py-[3vw] justify-start overflow-y-auto"
         >
           <Image
             src={popupImage}
             alt="Event Full View"
             width={1000}
             height={1000}
-            className="w-[50%] h-auto object-cover"
+            className="w-[50%] sm:w-[90%] h-auto object-cover"
           />
           <div
             onClick={() => setShowFullPopup(false)}

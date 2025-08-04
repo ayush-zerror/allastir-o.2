@@ -1,8 +1,8 @@
 import React, { createContext, useState } from "react";
-import Navbar from "../navbar/Navbar";
-import Footer from "../footer/Footer";
-import Cart from "../cart/Cart";
-import Popup from "../home/Popup";
+import Navbar from "../common/Navbar";
+import Footer from "../common/Footer";
+import Cart from "../common/Cart";
+import Popup from "../common/Popup";
 
 export const CartContext = createContext({});
 
