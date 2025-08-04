@@ -83,21 +83,21 @@ const Popup = () => {
       {showFullPopup && (
         <div
           data-lenis-prevent
-          className="fixed top-0 left-0 w-full h-full bg-black z-50 flex flex-row sm:flex-col sm:justify-center gap-[3vw] justify-center items-center py-[3vw]  overflow-y-auto"
+          className="fixed top-0 left-0 w-full sm:h-full sm:py-[5vw] sm:pt-[5vw] h-screen  bg-black z-50 flex flex-row sm:flex-col sm:justify-center gap-[3vw] justify-center items-center overflow-y-auto"
         >
           <Image
             src="/events/event1.jpg"
             alt="Event Full View"
             width={1000}
             height={1000}
-            className="h-[90vh] w-auto object-cover"
+            className="h-[90vh] sm:h-auto sm:w-[90%] w-auto object-cover"
           />
           <Image
             src="/events/event2.jpg"
             alt="Event Full View"
             width={1000}
             height={1000}
-            className="h-[90vh] w-auto object-cover"
+            className="h-[90vh] sm:h-auto sm:w-[90%] w-auto object-cover"
           />
           <div
             onClick={() => setShowFullPopup(false)}
