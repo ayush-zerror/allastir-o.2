@@ -8,14 +8,12 @@ const Popup = () => {
   const [showNotification1, setShowNotification1] = useState(true);
   const [showNotification2, setShowNotification2] = useState(true);
   const [showFullPopup, setShowFullPopup] = useState(false);
-  const [popupImage, setPopupImage] = useState("/events/event1.jpg");
   const router = useRouter();
 
-  const handleViewDetails = (image, notificationNum) => {
-    setPopupImage(image);
+  const handleViewDetails = () => {
     setShowFullPopup(true);
-    if (notificationNum === 1) setShowNotification1(false);
-    if (notificationNum === 2) setShowNotification2(false);
+    setShowNotification1(false);
+    setShowNotification2(false);
   };
 
   const showBell = !showNotification1 && !showNotification2;
@@ -48,7 +46,7 @@ const Popup = () => {
             setShowNotification1(true);
             setShowNotification2(true);
           }}
-          className="w-[2.8vw] h-[2.8vw] sm:w-[12vw] sm:h-[12vw] lg:w-[6vw] lg:h-[6vw] bg-[#003F3E] hover:bg-[#003F3E] rounded-full cursor-pointer flex items-center justify-center absolute bottom-6 right-6"
+          className="w-[2.8vw] h-[2.8vw] sm:w-[12vw] sm:h-[12vw] lg:w-[6vw] lg:h-[6vw] bg-[#DD2B1C] hover:bg-[#DD2B1C] rounded-full cursor-pointer flex items-center justify-center absolute bottom-6 right-6"
         >
           <i className="ri-notification-3-line text-white text-[1vw] sm:text-[4vw] lg:text-[2.5vw]"></i>
         </div>
@@ -64,7 +62,7 @@ const Popup = () => {
             location="Messe frankfurt, Frankfurt Germany"
             stall="Stall No. 12.1 F 40"
             onClose={() => setShowNotification1(false)}
-            onView={() => handleViewDetails("/events/event1.jpg", 1)}
+            onView={() => handleViewDetails()}
           />
         )}
 
@@ -76,7 +74,7 @@ const Popup = () => {
             location="India Expo Center (IEML), Greater Noida, Delhi NCR"
             stall="Hall B, Stall No. RH.N 19"
             onClose={() => setShowNotification2(false)}
-            onView={() => handleViewDetails("/events/event2.jpg", 2)}
+            onView={() => handleViewDetails()}
           />
         )}
       </div>
@@ -85,14 +83,21 @@ const Popup = () => {
       {showFullPopup && (
         <div
           data-lenis-prevent
-          className="fixed top-0 left-0 w-full h-full bg-black z-50 flex flex-col sm:justify-center items-center py-[3vw] justify-start overflow-y-auto"
+          className="fixed top-0 left-0 w-full h-full bg-black z-50 flex flex-row sm:flex-col sm:justify-center gap-[3vw] justify-center items-center py-[3vw]  overflow-y-auto"
         >
           <Image
-            src={popupImage}
+            src="/events/event1.jpg"
             alt="Event Full View"
             width={1000}
             height={1000}
-            className="w-[50%] sm:w-[90%] h-auto object-cover"
+            className="h-[90vh] w-auto object-cover"
+          />
+          <Image
+            src="/events/event2.jpg"
+            alt="Event Full View"
+            width={1000}
+            height={1000}
+            className="h-[90vh] w-auto object-cover"
           />
           <div
             onClick={() => setShowFullPopup(false)}

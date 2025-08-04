@@ -24,9 +24,9 @@ body {
   left: 100%;
   top: 50%;
   transform: translateY(-50%);
-  height: 150%;
+  height: 200%;
   width: 60px;
-  background: linear-gradient(to right , #003F3E 30% , transparent);
+  background: linear-gradient(to right , #DD2B1C 30% , transparent);
 }
 
 #home-connect {
